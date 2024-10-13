@@ -134,6 +134,22 @@ export default function Signup() {
               Log In
             </Link>
           </Text>
+
+          <Divider
+            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
+          />
+        </Flex>
+
+        <Flex gridArea="logo" flexDir="column" alignItems="flex-end">
+          <img src={logo.src} alt="Piffy" width={350} />
+          <Heading
+            size="2xl"
+            lineHeight="shorter"
+            marginTop={16}
+            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
+          >
+            Sign up to the <br /> platform
+          </Heading>
         </Flex>
       </Grid>
     </motion.div>
