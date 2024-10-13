@@ -86,7 +86,8 @@ def save_to_json(normalized_responses, suggested_major, filename="quiz_responses
 
 # Run the quiz suggestion process
 if __name__ == "__main__":
-    datapath='Dataset/Major-Descriptions/college_of_engineering_majors_with_electives_and_supporting.json'
+    majorspath='Dataset/Major-Descriptions/psu_majors.json'
+    minorspath='Dataset/Major-Descriptions/psu_majors.json'
     data, minor_data = read_json_file(datapath)
      
     quiz_responses= Quiz.engineering_quiz()

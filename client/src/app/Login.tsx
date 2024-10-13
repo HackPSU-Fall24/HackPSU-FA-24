@@ -5,7 +5,7 @@ import { Heading, Grid, Flex, Link, Button, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import Divider from "./components/Divider";
 import Input from "./components/Input";
-import logo from "./public/image.png";
+import logo from "./public/2.svg";
 import { motion } from "framer-motion";
 import { signIn } from "./service/auth";
 
@@ -49,7 +49,7 @@ export default function Login() {
         bg="brand.alice-blue"
       >
         <Flex gridArea="logo" flexDir="column" alignItems="flex-start">
-          <img src={logo.src} alt="Piffy" width={210} />
+          <img src={logo.src} alt="Piffy" width={350} />
 
           <Heading
             size="2xl"
@@ -136,28 +136,6 @@ export default function Login() {
               Register
             </Link>
           </Text>
-
-          <Divider color={"brand.alice-blue"} />
-
-          <Flex alignItems="center">
-            <Text fontSize="sm" color="white">
-              Or sign in with
-            </Text>
-            <Button
-              height="50px"
-              flex="1"
-              backgroundColor="brand.alice-blue"
-              color="brand.polynesian-blue"
-              marginLeft={6}
-              borderRadius="sm"
-              _hover={{
-                backgroundColor: "brand.bright-pink-crayola",
-                color: "white",
-              }}
-            >
-              FACEBOOK
-            </Button>
-          </Flex>
         </Flex>
       </Grid>
     </motion.div>

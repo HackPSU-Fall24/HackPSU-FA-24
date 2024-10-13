@@ -8,6 +8,9 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "../contexts/AuthContext";
 import { db } from "../firebase";
 import { doc, setDoc } from "firebase/firestore";
+import majorsData from "../public/psu_majors.json";
+import minorData from "../public/psu_minors.json";
+import OpenAI from "openai";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -72,27 +75,24 @@ export default function Quiz() {
 
     // Define labels corresponding to the array structure
     const labels = [
-      "enjoyed_subjects", // Corresponds to responses[0]
-      "struggled_subjects", // Corresponds to responses[1]
-      "engineering_interests", // Corresponds to responses[2]
-      "engineering_projects", // Corresponds to responses[3]
-      "math_comfort_level_Calculus", // Corresponds to responses[4]
-      "math_comfort_level_Linear_Algebra", // Corresponds to responses[5]
-      "programming_languages", // Corresponds to responses[6]
-      "programming_interest", // Corresponds to responses[7]
-      "career_goals", // Corresponds to responses[8]
-      "industry_interest", // Corresponds to responses[9]
-      "extracurricular_interest", // Corresponds to responses[10]
-      "study_hours_per_week", // Corresponds to responses[11]
-      "elective_interests", // Corresponds to responses[12]
-      "minor_interests", // Corresponds to responses[13]
-      "minor_pursuing", // Corresponds to responses[14]
+      "enjoyed_subjects",
+      "struggled_subjects",
+      "engineering_interests",
+      "engineering_projects",
+      "math_comfort_level_Calculus",
+      "math_comfort_level_Linear_Algebra",
+      "programming_languages",
+      "programming_interest",
+      "career_goals",
+      "industry_interest",
+      "extracurricular_interest",
+      "study_hours_per_week",
+      "elective_interests",
+      "minor_interests",
+      "minor_pursuing",
     ];
 
     try {
-      const userDocRef = doc(db, "Users", user.uid);
-
-      // Define labeledResponses with an index signature
       const labeledResponses: { [key: string]: any } = {};
 
       responses.forEach((value, index) => {
@@ -100,8 +100,49 @@ export default function Quiz() {
         labeledResponses[label] = value;
       });
 
-      await setDoc(userDocRef, labeledResponses, { merge: true });
-      await setDoc(userDocRef, { quiz_status: true }, { merge: true });
+      // Extract minor-related data
+      // When accessing minors
+      const majorTitles = Object.keys(majorsData);
+      const minorTitles = Object.keys(minorData);
+
+      // Fetch suggestion directly from OpenAI
+      const client = new OpenAI({
+        apiKey:
+          "sk-8Le14Fc1yiLKp5_bQIH6rNxc9GEn6tzH6S1aExgH6IT3BlbkFJA4gEln9XSpGiWVcO6-MR5Vl1970oyQBHk-GQ_c1OAA",
+        dangerouslyAllowBrowser: true,
+      });
+
+      const openAIResponse = await client.chat.completions.create({
+        model: "gpt-4o",
+        messages: [
+          {
+            role: "system",
+            content: `You are a helpful assistant that suggests majors and minors based on quiz responses. Make sure the majors you give are strictly based on ${majorTitles} and that the minors align with ${minorTitles}.
+            )}. Please give it in a format of {"Major":"<output-major>" , "Minor":"<output-minor>"} and nothing else`,
+          },
+          {
+            role: "user",
+            content: `Here are the quiz responses: ${JSON.stringify(
+              labeledResponses
+            )}. Suggest a major and minor for this person.`,
+          },
+        ],
+      });
+
+      const suggestion = openAIResponse.choices[0].message?.content || "";
+
+      // Save quiz responses, suggested major, and minor to Firestore
+      const userDocRef = doc(db, "Users", user.uid);
+
+      await setDoc(
+        userDocRef,
+        {
+          ...labeledResponses,
+          suggested_major_minor: suggestion,
+          quiz_status: true,
+        },
+        { merge: true }
+      );
 
       router.push("/");
     } catch (error) {
