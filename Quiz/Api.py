@@ -1,26 +1,27 @@
 import openai
 import Quiz
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 
 import json
 
 
-load_dotenv()
+#load_dotenv()
 #load dataset of the engineering
 
 
 
+
 # Set your OpenAI API key
-openai.api_key = os.getenv("API_KEY")
+openai.api_key = "sk-8Le14Fc1yiLKp5_bQIH6rNxc9GEn6tzH6S1aExgH6IT3BlbkFJA4gEln9XSpGiWVcO6-MR5Vl1970oyQBHk-GQ_c1OAA"
 
 def suggest_major(responses,data):    
     # Call OpenAI's API to analyze the responses and suggest a major
     response = openai.chat.completions.create(
       model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": f"You are a helpful assistant that suggests majors and minors and ranks them based on quiz responses. Make sure the majors that you give are strictly based ont the majors in {data}"},
-            {"role": "user", "content": f"Here are the quiz responses: {responses}. Suggest a major for this student."}
+            {"role": "system", "content": f"You are a helpful assistant that suggests majors and minors and ranks them based on quiz responses. Make sure the majors that you give are strictly based on the majors in {data}. Also do not deviate from {minor_data} for finding the appropriate minors"},
+            {"role": "user", "content": f"Here are the quiz responses: {responses}. Suggest a major for this person. Make sure that you answer in second person prespective."}
         ],
       #max_tokens=100,
       temperature=0.7
@@ -33,9 +34,15 @@ def suggest_major(responses,data):
  
 def read_json_file(filepath):
     # Open and read the file
+    minor_data={}
     with open(filepath, "r") as f:
         data = json.load(f)  # Load the JSON data into a Python object (usually a dictionary or list)
-    return data
+
+    for elem in data:
+        if 'minor' in elem or 'certificate' in elem:
+            minor_data[elem]=data[elem]
+            
+    return data, minor_data
 
 
 
@@ -73,13 +80,14 @@ def save_to_json(normalized_responses, suggested_major, filename="quiz_responses
     with open(filename, "w") as json_file:
         json.dump(data, json_file, indent=4)
     
-    print(f"Data saved to {filename}.")
+    #print(f"Data saved to {filename}.")
 
 
 # Run the quiz suggestion process
 if __name__ == "__main__":
-    datapath='Dataset/Final-Datasets/college_of_engineering_majors.json'
-    data = read_json_file(datapath)
+    datapath='Dataset/Major-Descriptions/college_of_engineering_majors_with_electives_and_supporting.json'
+    data, minor_data = read_json_file(datapath)
+     
     quiz_responses= Quiz.engineering_quiz()
     normalized_responses=normalize_quiz_responses(quiz_responses)
     print(quiz_responses)  # For debugging, you can remove this later
