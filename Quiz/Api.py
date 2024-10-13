@@ -55,8 +55,8 @@ def normalize_quiz_responses(quiz_responses):
     normalized_responses['struggled_subjects'] = quiz_responses.get("What subjects did you struggle with the most in high school? (Select all that apply)", [])
     normalized_responses['engineering_interests'] = quiz_responses.get("Which engineering fields are you most interested in? (Select up to three)", [])
     normalized_responses['engineering_projects'] = quiz_responses.get("Have you participated in any projects or extracurricular activities related to engineering? If yes, please describe.", "")
-    normalized_responses['math_comfort_level'] = quiz_responses.get("On a scale of 1-5, how comfortable are you with the following areas of mathematics?", "")
-    normalized_responses['math_interest'] = quiz_responses.get("Are you interested in applying mathematics in areas such as data analysis, simulations, or optimization in engineering?", "")
+    normalized_responses['math_comfort_level_Calculus'] = quiz_responses.get("On a scale of 1-5, how comfortable are you with Calculus?", "")
+    normalized_responses['math_comfort_level_Linear Algebra'] = quiz_responses.get("On a scale of 1-5, how comfortable are you with Linear Algebra?", "")
     normalized_responses['programming_languages'] = quiz_responses.get("Which programming languages are you familiar with? (Select all that apply)", [])
     normalized_responses['programming_interest'] = quiz_responses.get("Are you interested in learning more about programming and software development in your engineering career?", "")
     normalized_responses['career_goals'] = quiz_responses.get("What is your long-term career goal in engineering? (Select all that apply)", [])
@@ -64,7 +64,8 @@ def normalize_quiz_responses(quiz_responses):
     normalized_responses['extracurricular_interest'] = quiz_responses.get("Are you interested in joining engineering clubs, competitions, or research groups during your time in college?", "")
     normalized_responses['study_hours_per_week'] = quiz_responses.get("How many hours per week do you typically dedicate to studying outside of class?", "")
     normalized_responses['elective_interests'] = quiz_responses.get("What kind of elective courses would you like to explore outside of core engineering subjects? (Select all that apply)", [])
-
+    normalized_responses['minor_interests'] = quiz_responses.get("Are you open to pursuing minors or certificates along with your engineering degree?", "")
+    normalized_responses['minor_pursuing'] = quiz_responses.get("What types of minors or certificates are you interested in pursuing? (e.g., Business, Computer Science, Mathematics, etc.)", "")
     return normalized_responses
 
 
