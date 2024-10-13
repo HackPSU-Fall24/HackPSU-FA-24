@@ -1,13 +1,39 @@
 // pages/dashboard.tsx
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/NavBar";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "./contexts/AuthContext";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "./firebase";
 
 const Dashboard: React.FC = () => {
   const { user, logout, loading } = useAuth();
   const router = useRouter();
+  const [quizStatus, setQuizStatus] = useState(false);
+
+  useEffect(() => {
+    if (user) {
+      const fetchQuizStatus = async () => {
+        try {
+          const docRef = doc(db, "Users", user.uid);
+          const docSnap = await getDoc(docRef);
+
+          if (docSnap.exists()) {
+            setQuizStatus(docSnap.data().quiz_status);
+            console.log(docSnap.data().quiz_status);
+          } else {
+            console.log("No such document!");
+          }
+        } catch (error) {
+          console.error("Error fetching quiz data:", error);
+        }
+        // Fetch the user's quiz_status from the database
+      };
+      fetchQuizStatus();
+    }
+  }, [user]);
 
   if (loading) return <div>Loading...</div>;
 
@@ -36,10 +62,10 @@ const Dashboard: React.FC = () => {
             Unleash your potential with a customized experience.
           </p>
           <Link
-            href="/quiz"
+            href={quizStatus ? "/results" : "/quiz"}
             className="bg-alice-blue text-bright-pink-crayola px-8 py-4 rounded-full font-bold shadow-lg hover:scale-105 transform transition"
           >
-            Start Quiz
+            {quizStatus ? "Get Quiz Results" : "Start Quiz"}
           </Link>
         </header>
 
