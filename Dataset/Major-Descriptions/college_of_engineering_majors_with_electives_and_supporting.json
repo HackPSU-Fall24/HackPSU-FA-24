@@ -20,8 +20,20 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "prior to the start of the junior year in order to meet graduation requirements in the following two years. Six of the nine technical-elective credits taken in the senior year must be aerospace engineering courses. Select 6 credits of Aerospace Technical Elective (ATE) courses from department list Select 3 credits of General Technical Elective (GTE) courses from department list Select 3 credits of Limited Elective (LE) courses from department list AERSP Technical Elective AERSP Technical Elective Limited Elective General Technical Elective AERSP Technical Elective: Select from department list. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Technical Elective and 3 co-op credits for a Limited Elective. Health and Physical Activity Elective (GHW): Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Limited Elective. Limited Elective: Select from department list. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Limited Elective. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Technical Elective and 3 co-op credits for a Limited Elective.",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Aerospace Technical Electives (6 credits)": [
+            "AERSP 204/404",
+            "AERSP 494 and 496",
+            "AERSP Technical Electives (400-level AERSP courses)"
+        ],
+        "General Technical Electives (3 credits)": [
+            "ASTRO 291",
+            "PHYS 237",
+            "EMCH 407",
+            "MATH 410",
+            "E E 456"
+        ]
+    }
     },
     "Architectural engineering bae": {
         "program_description": "Program Description\n\n\nThis major emphasizes the application of scientific and engineering principles to the planning, design, and construction of buildings and building systems. The goal of the program is to provide engineering graduates with the best education available for careers in the building professions. Graduates will have the ability to practice as registered professional engineers in a variety of areas, both public and private, related to the planning, design, construction, and operation of buildings and to assume a place of leadership in society.\n \nFour options are available in the ten-semester major:\n \n \nthe Construction option, which emphasizes building construction engineering and construction management;\n \nthe Lighting/Electrical option, which emphasizes the design of lighting and electrical systems for buildings;\n \nthe Mechanical option, which emphasizes the design of heating, ventilating and air-conditioning systems in buildings; and\n \nthe Structural option, which emphasizes the analysis and design of building structural systems.\n \n \nCourses in architectural design are included in all options to give the engineering student an understanding of architectural design and its relation to engineering. Courses in engineering design are provided throughout the program. The design experience is culminated in a year-long capstone design course.\n \nThe professional degree, Bachelor of Architectural Engineering, is granted upon the satisfactory completion of the five-year program.\n\n\nWhat is Architectural Engineering?\n\n\nArchitectural Engineering is an interdisciplinary field focused on creating integrated building solutions, both in outcome and design process, to produce optimally engineered building systems. This is achieved through close coordination between several primary focus areas, including Structural, Mechanical, Lighting, Electrical, Acoustical, and Construction. The interdisciplinary approach of Architectural Engineering seeks to reduce the carbon footprint of buildings while improving the health, comfort, and productivity of building occupants. This interdisciplinary approach is necessary to respond to the most urgent societal and environmental challenges emerging from urbanization across the globe.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou have aptitude in math and science.\n\n\nYou appreciate the artistic and emotive aspects of architecture.\n\n\nYou are passionate about human-centric design, indoor environmental quality, sustainability, energy conservation, or net-zero and high-performance buildings.\n\n\nYou like to organize parts of a system or process, a handy skill in the planning, coordinating, budgeting, design, construction, and operation of building projects.\n\n\nYou seek a team-oriented work environment with excellent prospects for advancement into project management and corporate leadership.",
@@ -49,8 +61,23 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 11 credits from technical courses on department option list Select 8 credits from technical courses on department option list Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective. Department Elective Department Elective Department Elective Department Elective Department Electives: Any 400-level or 500-level AE course is acceptable, except www.ae.psu.edu/academics/undergraduate/electives.aspx and click on \"Department Elective Worksheet.\" Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department Elective.",
-        "supporting_courses": "Supporting Courses and Related Areas Supporting Courses and Related Areas Supporting Courses and Related Areas Supporting Courses and Related Areas"
+        "electives": {
+        "Structural Option (6 credits)": [
+            "AE 430: Indeterminate Structures",
+            "AE 431: Advanced Concrete Design",
+            "AE 432: Masonry Structures"
+        ],
+        "Mechanical Option (3 credits)": [
+            "AE 454: Advanced HVAC",
+            "AE 455: HVAC Design",
+            "AE 457: HVAC Controls"
+        ],
+        "Lighting/Electrical Option (3 credits)": [
+            "AE 461: Architectural Illumination Systems",
+            "AE 463: Daylighting Analysis",
+            "AE 469: Photovoltaic Systems Design"
+        ]
+    }
     },
     "Biological engineering bs": {
         "program_description": "Program Description\n\n\nThis major helps prepare students for careers involving the application of engineering principles to agricultural and biological production systems, processing systems, and conservation of land and water resources. Education in mathematics, physics, and engineering sciences common to all engineering disciplines is provided along with specialized training in biological and agricultural sciences. The curriculum covers all areas of biological engineering, including development of machines for biological processing and agriculture, postharvest handling and processing, natural resource management and utilization, biological processes, food engineering, and structures and their environmental modifications. A student must select the Agricultural Engineering option, Food and Biological Processing Engineering option, or the Natural Resources Engineering option.\n \nPrinciples of engineering design experiences are integrated throughout the third-year curriculum by having students solve problems typical of those encountered in the agricultural and biological engineering profession. A year-long major design experience in the fourth year emphasizes that biological engineers must learn not only how to develop engineering solutions to unique, practical problems using the newest technology, but also to assess and integrate the social and ethical implications of their solutions.\n \nCareers for graduates include design, development, and research engineering positions involving biological processes, machinery development, natural resources management, materials handling, biological product development, and structural systems for animals, plants, and crop storage. Biological engineers are employed in industry, consulting firms, and governmental agencies in the United States and abroad. Graduates deal with the various engineering aspects associated with production and processing of food, fiber, and other biological materials, within the constraints of environmental protection and natural resource conservation.\n\n\nWhat is Biological Engineering?\n\n\nBiological Engineering involves the study of engineering fundamentals, very similar to traditional engineering disciplines like chemical, civil, or mechanical engineering. What makes Biological Engineering unique is the integration of these engineering fundamentals with biological, agricultural, and environmental sciences and the holistic approach taken to studying agricultural production, processing of food and other bio-based materials, and natural resource protection. Problem-solving skills are developed and then applied to grand engineering challenges such as sustainably providing safe food and clean water.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou enjoy quantitative problem solving and working with your hands and/or working outdoors.\n\n\nYou are interested in a career where you address challenges related to fundamental societal needs, like food, water, fiber, and renewable energy.\n\n\nYou are passionate about sustainability.\n\n\nYou want to take application-focused classes with interactive labs and hands-on learning opportunities.",
@@ -77,8 +104,14 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 6 credits in technical elective Select 6 credits in technical elective Select 3 credits in technical elective",
-        "supporting_courses": "Supporting Courses and Related Areas Supporting Courses and Related Area: Require a grade of C or better Supporting Courses and Related Areas Supporting Courses and Related Areas"
+        "electives": {
+        "Engineering Science/Design Courses (6 credits)": [
+            "BE 461: Design of Fluid Power Systems",
+            "BE 464: Bioenergy Systems Engineering",
+            "CE 462: Open Channel Hydraulics",
+            "ME 444: Engineering Optimization"
+        ]
+    }
     },
     "Biological engineering minor": {
         "program_description": "Program Description\n\n\nThis minor provides students with an opportunity to apply engineering principles to agricultural and biological production and processing systems and to the management of our natural resources. Courses may be selected by students to gain a better understanding of power and machinery, microbiological engineering, soil conservation and water quality, food process engineering, or structures and their environments.\n \nThe minor is particularly suitable for students pursuing an undergraduate degree in a different engineering major. Additional prerequisites for courses in the minor may be required including calculus through differential equations, engineering mechanics, fluid dynamics, or thermodynamics. Students interested in pursuing this minor should follow up with the contact provided under Academic Advising to discuss how the minor might integrate with their major and any other questions.\n\n\nWhat is Biological Engineering?\n\n\nBiological Engineering involves the study of engineering fundamentals, very similar to traditional engineering disciplines like chemical, civil, or mechanical engineering. What makes Biological Engineering unique is the integration of these engineering fundamentals with biological, agricultural, and environmental sciences and the holistic approach taken to studying agricultural production, processing of food and other bio-based materials, and natural resource protection. Problem-solving skills are developed and then applied to grand engineering challenges such as sustainably providing safe food and clean water.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou are pursuing an engineering major and want to complement it with an engineering minor that offers a different perspective on the connections between agriculture, food, and environment.\n\n\nYou want to take application-focused classes with interactive labs and hands-on learning opportunities.\n\n\nYou are interested in solving problems related to fundamental societal needs, like food, water, fiber, and renewable energy.\n\n\nYou are passionate about sustainability.",
@@ -154,9 +187,21 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 3 credits of Science or Engineering Elective courses from departmental list Select 3 credits from Related Electives department list Select 6 credits from the Related Electives department list Select 3 credits from Related Electives department list Select 3 credits from Related Electives department list Related Technical Elective Biochemical Elective Biochemical Elective Science or Engineering Elective Biochemical Elective The department website lists courses acceptable as Biochemical Electives, Medical Imaging and Device Electives, Biomaterials Electives, Biomechanics Electives, Related Electives, and Science or Engineering Electives. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Science or Engineering Elective. (or Biomaterials Elective) Biomaterials Elective Related Technical Elective Science or Engineering Elective (or Biomaterials Elective) The department website lists courses acceptable as Biochemical Electives, Medical Imaging and Device Electives, Biomaterials Electives, Biomechanics Electives, Related Electives, and Science or Engineering Electives. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Science or Engineering Elective. Biomechanics Elective Biomechanics Elective Related Technical Elective Science or Engineering Elective Related Technical Elective The department website lists courses acceptable as Biochemical Electives, Medical Imaging and Device Electives, Biomaterials Electives, Biomechanics Electives, Related Electives, and Science or Engineering Electives. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Science or Engineering Elective. Medical Imaging and Devices Elective Related Technical Elective Medical Imaging and Devices Elective Related Technical Elective Science or Engineering Elective The department website lists courses acceptable as Biochemical Electives, Medical Imaging and Device Electives, Biomaterials Electives, Biomechanics Electives, Related Electives, and Science or Engineering Electives. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Science or Engineering Elective.",
-        "supporting_courses": "Supporting Courses and Related Areas Supporting Courses and Related Areas Supporting Courses and Related Areas Supporting Courses and Related Areas Supporting Courses and Related Areas"
-    },
+        "electives": {
+        "Biochemical Option Electives (6 credits)": [
+            "BME 433: Advanced Biomaterials",
+            "BME 443: Biomechanics",
+            "CH E 340: Chemical Engineering Thermodynamics",
+            "BME 496 or 494H"
+        ],
+        "Biomechanics Option Electives (6 credits)": [
+            "BME 419: Biomedical Device Engineering",
+            "E MCH 461: Finite Elements in Engineering",
+            "M E 461: Internal Combustion Engines",
+            "E MCH 446: Failure of Solids"
+        ]
+    }
+  },
     "Biomedical engineering minor": {
         "program_description": "Program Description\n\n\nThis interdisciplinary minor is designed for students interested in the application of engineering principles to medical and biological problems. The minor is particularly suitable for students pursuing an undergraduate degree in a different engineering major, physics, or other applied science who are seeking careers in health-related professions. Students interested in pursuing this minor should contact the Department of Biomedical Engineering with any questions or for more information.\n\n\nWhat is Biomedical Engineering?\n\n\nBiomedical engineering is the application of the life sciences, mathematics, and engineering principals to define and solve problems in biology, medicine, healthcare, and other related fields. Biomedical engineers work to design, create, and improve medical devices such as prosthetics, artificial organs and medical imaging devices. They also develop instrumentation, medical information systems, and health management and care delivery systems to improve health care organizations. Many graduates of the biomedical engineering Bachelor of Science program also go on to pursue advanced degrees in medicine, engineering and related fields such as biostatistics, public health, and health administration.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou like applying traditional engineering skills and analysis to understand biological systems.\n\n\nYou want to emphasize the integration of classical and modern engineering principles with the life sciences and healthcare.\n\n\nYou are passionate about bridging the gap between medical professionals and the engineering community.\n\n\nYou're interested in medical research, teaching, industrial and government healthcare and medical practice.",
         "entrance_to_major": "Entrance to Minor\n\n\nPHYS\u00a0211\n, \nPHYS\u00a0212\n, and calculus through differential equations (\nMATH\u00a0250\n or \nMATH\u00a0251\n) are required for entrance to the minor. Additional prerequisites for prescribed and supporting courses may be required and should be researched prior to applying for the minor (e.g. \nCHEM\u00a0112\n and \nCMPSC\u00a0200\n).",
@@ -202,8 +247,14 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 3 credits of materials elective from departmental list Select 6 credits in 400-level chemical engineering electives from departmental list Select 3 credits of approved engineering electives from departmental list Select 6 credits of professional electives from department list Professional Elective Physical Chemistry Elective Chemical Engineering Elective Engineering Elective Chemical Engineering Elective Professional Elective Materials Elective for lists of courses for the CHE Elective, Engineering Elective, Professional Elective, Physical Chemistry Elective, and Materials Elective. Health and Physical Activity Elective: Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a professional elective.",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Technical Electives (6 credits)": [
+            "CH E 340: Chemical Engineering Thermodynamics",
+            "CH E 438: Chemical Reactor Design",
+            "BMB 251: Molecular and Cell Biology I",
+            "CHEM 457: Experimental Physical Chemistry"
+        ]
+    }
     },
     "Civil engineering bs": {
         "program_description": "Program Description\n\n\nThe program in Civil and Environmental Engineering is designed to provide the basic undergraduate education required for private practice and public service in civil engineering and/or continue formal education. Emphasis is placed on the fundamentals of civil engineering principles and design techniques. Students utilize basic engineering science concepts in several of the different specialty areas (e.g., construction/management, environmental, materials/pavement design/geotechnical, structures, transportation, and water resources). Finally the students are able to choose an area of specialization for professional practice or graduate studies.\n \nThe program is broadened by courses in communication, arts, humanities, social and behavioral sciences, as well as other engineering disciplines. Students gain experience in working as members of a team and using interdisciplinary approaches to solve problems. These experiences, as well as those related to engineering principles and design, are provided through exercises in the classroom, laboratory, and field. The program culmination is a capstone design course wherein the students' knowledge and skills are applied to actual engineering problems.\n\n\nWhat is Civil Engineering?\n\n\nCivil engineering is one of the oldest and most socially-relevant engineering disciplines. Grounded in mathematics and science, civil engineers make a lasting impact as they plan, design, construct, operate, and maintain the everyday, yet critical, infrastructure systems needed in our daily lives. In this challenging and diverse field, civil engineers also find solutions for critical environmental issues, including slowing the progress and mitigating the effects of climate change, eliminating the causes and treating the effects of environmental pollutants, and providing access to clean water. In recent years, the rapid application of new technologies has fostered the development of autonomous vehicles, 3D printing, smart structures, advanced materials, and new forms of renewable energy.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou want to design and build large-scale projects that last a long time.\n\n\nYou care about the quality of the water that comes out of the faucet.\n\n\nYou are interested in the operations and safety of future transportation systems.\n\n\nYou try to find sustainable solutions for every challenge, big or small.\n\n\nYou would like to use your technical skills in an exciting, people-serving profession.",
@@ -226,8 +277,20 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "1 credit of First-Year Seminar or Elective Select 12 credits of Civil Engineering Technical Electives from CE 300-level courses, CE 400-level courses, or ENVE 400-level courses Select 9 credits of Technical Electives from CE 300-level courses, CE 400-level courses, ENVE 400-level courses, or approved 400-level courses listed in the Civil Engineering Undergraduate Handbook is taken, one credit goes toward lab requirement and remaining three go towards CE or general technical electives. Students may substitute 6 credits of ROTC for 3 credits of GHW courses and 3 credits of Technical Electives once they have completed 18 credits of ROTC. Students are required to take 21 total credits of technical electives. A minimum of 12 of the 21 credits must be courses with CE or ENVE prefixes. Civil Engineering Technical Elective Civil Engineering Technical Elective Civil Engineering Technical Elective Civil Engineering Technical Elective Technical Elective Technical Elective Technical Elective Health and Physical Activity Elective: Students may substitute 6 credits of ROTC for 3 credits of GHW courses and 3 credits of Technical Electives once they have completed 18 credits of ROTC. Technical Elective: for a Technical Elective.",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Structural Engineering Focus (6 credits)": [
+            "CE 437: Structural Design of Foundations",
+            "CE 445: Bridge Engineering"
+        ],
+        "Transportation Engineering Focus (3 credits)": [
+            "CE 461: Highway Engineering",
+            "CE 467: Pavement Design"
+        ],
+        "Water Resources Engineering Focus (6 credits)": [
+            "CE 465: Water Resources Engineering",
+            "CE 472: Hydrologic Analysis"
+        ]
+    }
     },
     "Computational sciences minor": {
         "program_description": "Program Description\n\n\nThe Computational Sciences minor provides the necessary skills to use computers to study and solve scientific, engineering and data-centric problems across a wide range of disciplines. The minor complements the areas of theory and experimentation found in traditional scientific and engineering studies through the use of computational modeling, algorithm design, and event-driven programming. Students will customize the minor by selecting two advanced courses in their discipline or related areas that build upon the computational foundations provided in prescribed courses. The minor will prepare students with the skills necessary to apply computational methods in a variety of scientific and engineering disciplines.\n\n\nWhat is Computational Sciences?\n\n\nComputational Sciences is the study and application of computational methods to understand, analyze and solve complex problems. It includes the design, development and evaluation of models and simulations of natural systems and complements traditional methods of theory and laboratory experiments. It seeks to provide a deeper understanding of scientific and engineering problems through the mathematical modeling of complex systems. A core topic is the design, implementation and evaluation of algorithms, both numerical and non-numerical, that address problems across a broad range of science and engineering disciplines.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou like to analyze and solve complex problems.\n\n\nYou excel in mathematics.\n\n\nYou want to apply computational methods to your discipline.",
@@ -274,8 +337,22 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "CMPEN Elective CMPEN Elective CMPSC/CMPEN Elective CMPSC/CMPEN Elective Department List (General Elective) Department List (General Elective) Select from department list. Restrictions may apply. Computer Engineering Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester.",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Digital Systems Focus (6 credits)": [
+            "CMPEN 431: Introduction to Computer Architecture",
+            "CMPEN 441: Embedded Systems",
+            "CMPEN 454: Digital Systems Design"
+        ],
+        "Networking Focus (3 credits)": [
+            "CMPEN 461: Computer Networks",
+            "CMPEN 473: Advanced Networking"
+        ],
+        "Software Engineering Focus (3 credits)": [
+            "CMPSC 421: Algorithms",
+            "CMPSC 431W: Database Management Systems",
+            "CMPSC 465: Data Structures and Algorithms"
+        ]
+    }
     },
     "Computer engineering minor": {
         "program_description": "Program Description\n\n\nThe Computer Engineering Minor provides students with the fundamental topics of computer hardware design, including digital logic design, computer organization, computer communication networks and computer architecture. Complimenting these core topics are elective courses in areas including embedded systems, digital integrated circuits, field programmable devices, and functional verification. This minor complements disciplines related to computing and that make use of specialized computing hardware. Students in majors related to computer engineering will already have the mathematics and physics background to pursue this major without taking additional foundational courses.\n\n\nWhat is Computer Engineering?\n\n\nComputer engineering is the study of the design, analysis, and implementation of computer systems including processors, memory, embedded devices, and data communication systems for a wide range of application domains. It includes the study of digital systems, computer architecture, and computer networks. It encompasses many design activities spanning from designing individual logic components to designing complete computer systems composed of hardware, software, and hardware-software co-design. Computer engineering drives the development of new computing systems that enable the latest technologies impacting our everyday lives.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou excel in math and physics and have an interest in working with computer hardware.\n\n\nYou want to understand how current computer hardware and software work together.\n\n\nYou want to work with computing systems that impact and improve everyday lives.",
@@ -322,9 +399,15 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Natural Science Elective (GN, See College Note below for options that DO NOT count) CMPSC Elective CMPSC Elective Department List (General Elective) Department List (General Elective) Department List (General Elective) Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. NATURAL SCIENCES ELECTIVE: Computer Science Elective: Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. Department List Elective: Select from department list. Restrictions may apply. Students who complete the ROTC Program may substitute 3 ROTC credits for a Department List Elective. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Department List Elective. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department List Elective. Natural Science Elective (GN, See College Note below for options that DO NOT count) CMPSC Elective CMPSC Elective CMPSC Elective Department List (General Elective) Department List (General Elective) Department List (General Elective) Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. NATURAL SCIENCES ELECTIVE Computer Science Elective : Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. Department List Elective : Select from department list. Restrictions may apply. Students who complete the ROTC Program may substitute 3 ROTC credits for a Department List Elective. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Department List Elective. : Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department List Elective. Natural Science Elective (GN, See College Note below for options that DO NOT count) CMPSC Elective CMPSC Elective Department List (General Elective) Department List (General Elective) Department List (General Elective) NATURAL SCIENCES ELECTIVE: Computer Science Elective: Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. Department List Elective: Select from department list. Restrictions may apply. Students who complete the ROTC Program may substitute 3 ROTC credits for a Department List Elective. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Department List Elective. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department List Elective. Natural Science Elective (GN, See College Note below for options that DO NOT count) CMPSC Elective CMPSC Elective Department List (General Elective) Department List (General Elective) Department List (General Elective) NATURAL SCIENCES ELECTIVE: Computer Science Elective: Select from department list. Restrictions may apply. Computer Science Electives are NOT offered every semester or even every year. Contact the department for information on which classes are scheduled to be offered during a given semester. Department List Elective: Select from department list. Restrictions may apply. Students who complete the ROTC Program may substitute 3 ROTC credits for a Department List Elective. Students who complete the Cooperative Education Program may substitute 3 co-op credits for a Department List Elective. Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Department List Elective.",
-        "supporting_courses": "Supporting Courses and Related Areas Supporting Course Supporting Course Supporting Course: Supporting Course Supporting Course Supporting Course Supporting Course Supporting Course Supporting Course: Supporting Course Supporting Course Supporting Course:"
-    },
+        "electives": {
+        "Computer Science Electives (12 credits)": [
+            "CMPSC 402: Operating Systems Design",
+            "CMPSC 421: Advanced Algorithms",
+            "CMPSC 431W: Database Management Systems",
+            "CMPSC 465: Data Structures and Algorithms",
+            "CMPSC 448: Machine Learning and Pattern Recognition"
+        ]
+    }    },
     "Cybersecurity computational foundations minor": {
         "program_description": "Program Description\n\n\nThe Cybersecurity Minor offered by the Department of Computer Science and Engineering is designed for students in computational majors who wish to acquire the technical depth to design and construct secure cyber systems. Building upon a core computer science foundation the minor includes courses in computer security, mobile and wireless security, software security and networking. Additional courses in the minor provide areas of application such as operating systems, database systems, and computer architecture, in which issues of security arise. The minor prepares students for careers as technical professionals working with secure cyber systems and for graduate study in computer, network and systems security.",
         "entrance_to_major": "Entrance to Minor\n\n\nAny student wishing entrance to the minor should have successfully completed all the prerequisite courses: \nCMPSC\u00a0121\n or \nCMPSC\u00a0131\n, \nCMPSC\u00a0122\n or \nCMPSC\u00a0132\n, \nCMPSC\u00a0221\n, \nCMPSC\u00a0311\n, \nCMPSC\u00a0360\n, \nCMPEN\u00a0270\n/\nCMPEN\u00a0271\n, \nCMPEN\u00a0331\n, and \nSTAT\u00a0318\n or \nSTAT\u00a0414\n or \nSTAT\u00a0418\n.",
@@ -449,8 +532,19 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "The mission of our undergraduate program is to provide a high-quality education in electrical engineering for our students and to instill in them the attitudes, values, and vision that will prepare them for lifetimes of success, continued learning, and leadership in their chosen careers. A combination of required and elective courses ensures that students acquire a broad knowledge base in electrical circuits, digital systems, electronic devices, electromagnetics, and linear systems, as well as expertise in one or more areas of specialization. Additional problem-solving skills and practical experience are developed through design projects and laboratory assignments, which also provide opportunities for developing team-building and technical communication skills. EE/CMPEN 300-Level Elective EE/CMPEN 300-Level Elective EE/CMPEN 400-Level Elective EE/CMPEN 300/400-Level Elective EE/CMPEN 400-Level Elective Related Elective Related Elective Statistics Elective EE/CMPEN 300-Level Elective: EE/CMPEN 300/400-Level Elective: EE/CMPEN 400-Level Elective: Health and Physical Activity Elective: Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Related Elective. Related Elective: Students who complete the ROTC Program may substitute 3 ROTC credits for the GHW requirement and 3 ROTC credits for a Related Elective. Students who complete the Cooperative Education Program may substitute up to 6 co-op credits for the Related Electives. Statistics Elective:",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "300-Level Electives (3 credits)": [
+            "EE 311: Electronic Circuit Design II",
+            "EE 320: Introduction to Electro-Optical Engineering",
+            "EE 337: Introduction to Quantum Information Science",
+            "EE 351: Discrete-Time Linear Systems"
+        ],
+        "400-Level Electives (3 credits)": [
+            "EE 410: Linear Electronic Design",
+            "EE 416: Digital Integrated Circuits / VLSI Design",
+            "EE 421: Optical Fiber Communications"
+        ]
+    }
     },
     "Electro mechanical engineering technology bs": {
         "program_description": "Program Description\n\n\nThe Electro-Mechanical Engineering Technology (B.S. EMET) degree program provides the basic undergraduate education required for a career as an electro-mechanical engineer. The program emphasizes a breadth of knowledge in all fields of engineering technology related to typical, highly-automated manufacturing, production, or assembly plant processes. Basic coverage is provided in all major areas to technology involved in the operation and control of manufacturing and production processes, including instrumentation and monitoring methods, principles of machine design, automated control techniques, thermal and fluid sciences, computerized manufacturing systems, principles of electrical and electronic circuit operation, computer-aided drafting and design, economics of production, and statistical analysis and quality control.\n \nThe primary aim of the EMET program is to provide graduates with the knowledge and skills necessary to apply current methods and technology to the development, design, operation, and management of electro-mechanical systems, particularly in those industries where automated systems are prevalent.\n \nThe major is organized as a four-year baccalaureate program with the corresponding Penn State admission requirements. Graduates of an associate degree in either electrical or mechanical engineering technology from Penn State may re-enroll in the EMET program. The College of Engineering ENGR students may enroll through \"Change of Major\" procedures. Students from an engineering technology program at another institution or community college accredited by TAC of ABET may transfer into the program with advanced standing.\n\n\nWhat is Electro-Mechanical Engineering?\n\n\nThe Bachelor of Science degree in Electro-Mechanical Engineering Technology responds to a growing demand for engineers with a broad range of technical skills. The program emphasizes knowledge in the field of technology related to the design, maintenance, and operation of electromechanical systems, essentially automation and robotics. These systems incorporate electronic, mechanical, instrumentation and control elements. The program provides students with hands-on experience with these elements, technical knowledge, and the soft skills needed to be successful in the field of engineering. In this curriculum, students receive early exposure to technology by scheduling technical courses in the major. A laboratory component that promotes the understanding of the subject matter through the experiential application of theory accompanies most technical courses. This program culminates with a senior capstone project in which students work together in a team to design and implement an engineering project from initial proposal through product demonstration.\n\n\nYou Might Like This Program If...\n\n\nYou are interested in math and science but prefer spending time applying your skills in a laboratory or field setting as opposed to studying the theory behind these subjects in a classroom setting. If you like to take things apart, to see how they work, this may be for you. There is a greater emphasis on engineering applications while building an understanding of scientific theory.",
@@ -741,8 +835,23 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "After completing courses required for the core and fundamental competencies in the major, students can choose two IE technical elective courses from a department list. In addition, students must also complete the three-credit capstone design course. Select 6 credits as non-major electives from department list Select 6 credits of technical electives from the department list; all 6 credits must be IE credits The course not taken to satisfy this requirement can be taken as a technical elective. Please see the department list. Engineering Elective Engineering Elective Science Elective Manufacturing Process Elective IE-Technical Elective IE-Technical Elective Engineering Elective Notes: https://www.ime.psu.edu/students/undergraduate/electives.aspx Health and Physical Activity Elective: https://www.ime.psu.edu/students/undergraduate/electives.aspx Science Elective: https://www.ime.psu.edu/students/undergraduate/electives.aspx Technical Elective: https://www.ime.psu.edu/students/undergraduate/electives.aspx",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        
+        "electives": {
+                "Science Electives (3 credits)": [
+                    "BIOL 141: Introductory Physiology",
+                    "CHEM 112: Chemical Principles II",
+                    "PHYS 214: General Physics: Wave Motion and Quantum Physics"
+                ],
+                "Manufacturing Process Electives (3 credits)": [
+                    "IE 306: Machining Process Design & Analysis",
+                    "IE 428: Metal Casting"
+                ],
+                "Technical Electives (6 credits)": [
+                    "IE 433: Regression Analysis and Design of Experiments",
+                    "IE 436: Six Sigma Methodology",
+                    "IE 456: Industrial Robot Applications"
+                ]
+            }
     },
     "Information sciences technology aerospace engineering minor": {
         "program_description": "Program Description\n\n\nThe role of Information Sciences and Technology in the practice of Aerospace Engineering is very important. Aerospace systems rely heavily on computers, software, and digital information; for control, sensors, and other onboard systems. The Boeing 777 has more than 1000 processors and roughly 20 million lines of software onboard, and F-16 and F-117As cannot fly without their onboard computers. In addition, many future aerospace vehicles will be unmanned, and the software challenges will be even greater. The onboard memory has also increased exponentially, the F-106 had 20 KBytes of memory and the new Joint Strike Fighter might have 2 GBytes of memory. The hardware and software must be carefully designed and thoroughly tested, since most aerospace systems are mission- or safety-critical systems. Computers and software are heavily used in the design, development, and manufacturing of aerospace systems. Large supercomputers are often used in the design process. The IST minor will enrich their educational achievements and increase their chances in obtaining employment or entering graduate school. The NSF and the DOD are encouraging universities to enhance their educational programs so that we have well-qualified engineers for future systems, and our IPAC members have stressed the importance of IT for our students.\n\n\nWhat is Information Sciences and Technology for Aerospace Engineering?\n\n\nThe role of software in the practice of aerospace engineering is critical and continues to grow rapidly. The effective design, development, and manufacturing of aerospace systems rely heavily on computers, software, and digital information. Some aircraft cannot fly without their onboard computers, and many future aerospace vehicles will be unmanned, resulting in even greater software challenges. Providing undergraduate aerospace engineering students the opportunity to learn more about information sciences and technology by earning a minor in Information Sciences and Technology will not only enrich their educational achievements, but it will also make them more valuable to potential employers, and help them succeed in professional employment or graduate school. They will better appreciate the entire aerospace system better, and will be better equipped to work side-by-side with experts in the computing and software fields.\n\n\nYou Might Like This Program If...\n\n\n\n\nYou are interested in learning more about the role of software in the practice of aerospace engineering.\n\n\nYou want to better appreciate the entire aerospace system, and be better equipped to work side-by-side with experts in the computing and software fields.",
@@ -885,8 +994,21 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 3 credits in a 400-level ME Technical Elective course from department list excluding Select 6 credits in Engineering Technical Elective courses from department list Select 3 credits in General Technical Elective courses from department list Science Elective Engineering Technical Elective (ETE) Mechanical Engineering Technical Elective (METE) General Technical Elective (GTE) Engineering Technical Elective (ETE) Science Elective Choices: Information on Technical Elective requirements can be found at: https://www.me.psu.edu/students/undergraduate/curriculum-electives.aspx Science Elective Engineering Technical Elective (ETE) General Technical Elective (GTE) Mechanical Engineering Technical Elective (METE) Engineering Technical Elective (ETE) Science Elective Choices: Information on Technical Elective requirements can be found at: https://www.me.psu.edu/students/undergraduate/curriculum-electives.aspx Science Elective (see below) Engineering Technical Elective (ETE) General Technical Elective (GTE) Engineering Technical Elective (ETE) Mechanical Engineering Technical Elective (METE) Science elective choices: https://www.me.psu.edu/students/undergraduate/curriculum-electives.aspx",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Mechanical Engineering Technical Electives (3 credits)": [
+            "ME 421: HVAC System Design",
+            "ME 437: Mechatronics",
+            "ME 460: Fluid Power Systems Design"
+        ],
+        "Engineering Technical Electives (6 credits)": [
+            "BME 406: Biomechanics",
+            "AERSP 460: Spacecraft Dynamics"
+        ],
+        "General Technical Electives (3 credits)": [
+            "CHEM 210: Organic Chemistry",
+            "PHYS 237: Modern Physics"
+        ]
+    }
     },
     "Nanotechnology certificate": {
         "program_description": "Program Description\n\n\nThe primary goal of the program is to offer students and incumbent workers worldwide the opportunity to earn this 18-credit certificate, which will be available only online. All candidates are required to successfully complete the required courses.\n\n\nWhat is Nanotechnology?\n\n\nNanotechnology is inherently interdisciplinary and bridges across physics, biology, materials science, and chemistry. It is a general purpose, enabling technology that is already impacting a broad spectrum of human endeavors, from medicine and catalysis to textiles and quantum computing. The Nanotechnology certificate is designed to help prepare students from a broad range of disciplines for careers or graduate study in fields involving nanotechnology. It builds upon the strengths of Penn State's faculty, expertise, academic programs, and nanofabrication facilities, including its class 1 and class 10 cleanrooms. The curriculum provides students with fundamental knowledge and skills in nanoscale simulation, design, syntheses, characterization, properties, processing, manufacturing, and applications.\n\n\nYou Might Like This Program If...\n\n\nYou are interested in gaining fundamental knowledge and skills in nanoscale simulation, design, syntheses, characterization, properties, processing, manufacturing, and applications.",
@@ -957,8 +1079,25 @@
             "IL Cultures": "3 credits (International Cultures)",
             "WAC": "3 credits (Writing Across the Curriculum)"
         },
-        "electives": "Select 3 credits in General Technical Elective (GTE) courses from department list Nuclear Engineering Elective (NETE) General Technical Elective (GTE) Nuclear Engineering Elective (NETE) General Technical Elective (GTE): Health and Physical Activity Elective: Nuclear Engineering Elective (NETE):",
-        "supporting_courses": "Supporting Courses and Related Areas"
+        "electives": {
+        "Nuclear Engineering Technical Electives (6 credits)": [
+            "NUCE 420: Radiological Safety",
+            "NUCE 430: Design Principles of Reactor Systems",
+            "NUCE 451: Experiments in Reactor Physics",
+            "NUCE 460: Advanced Reactor Physics"
+        ],
+        "General Technical Electives (3 credits)": [
+            "EE 212: Introduction to Electronic Measuring Systems",
+            "EMCH 213: Strength of Materials"
+        ]
+    },
+    "supporting_courses": {
+        "Supporting Courses and Related Areas (6 credits)": [
+            "EMCH 211: Statics",
+            "EMCH 212: Dynamics",
+            "EMCH 213: Strength of Materials"
+        ]
+    }
     },
     "Product innovation entrepreneurship certificate": {
         "program_description": "Program Description\n\n\nLearn and practice the entrepreneurial mindset in the Product Innovation Entrepreneurship Certificate. This certificate prepares you to run an entrepreneurial venture or to be an intrapreneur where you utilize the entrepreneurial mindset within an existing organization. Learn and practice business fundamentals from an entrepreneurial perspective and deal with the challenges of leading a creative entrepreneurial organization and the associated ambiguity. The certificate is open to any student who has the goal to own their own business or wants to learn to think outside the box. This certificate will help the student work effectively within any organization, always looking for ways to be more creative and innovative.\n\n\nYou Might Like This Program If...\n\n\nYou want to take control of your career, whether working for yourself or within an existing organization. The students completing this program look for careers where they have the autonomy to make decisions and take pride in their accomplishments. This program helps you build confidence to pursue opportunities that you identify. The projects you work on in these classes are a fun way to put all your major skills to use in real-world activities.\n\n\nMORE INFORMATION ABOUT PRODUCT INNOVATION ENTREPRENEURSHIP",
