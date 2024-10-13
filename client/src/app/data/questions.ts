@@ -1,5 +1,7 @@
 // src/app/data/questions.ts
 
+import { option } from "framer-motion/client";
+
 export interface Question {
   title: string;
   options?: string[];
@@ -47,6 +49,11 @@ const questions: Question[] = [
     title: "What is your long-term career goal in engineering? (Select all that apply)",
     options: ["Work in industry", "Work in academia or research", "Start my own business (entrepreneurship)", "Government/Policy", "Unsure"],
     type: "multi-select",
+  },
+  {
+    title: "Which industries or sectors interest you the most? (Select up to three)",
+    options: [ "Aerospace", "Automotive", "Biotechnology", "Energy", "Environmental", "Information Technology", "Manufacturing", "Robotics/AI", "Telecommunications", "Other (Please specify)"],
+    type: "multi-select"
   },
   {
     title: "Are you interested in joining engineering clubs, competitions, or research groups?",

@@ -78,7 +78,7 @@ export default function Quiz() {
       >
         {/* Entire Container with white box and animation */}
         <div
-          className={`relative w-full max-w-2xl p-6 bg-alice-blue text-polynesian-blue rounded shadow-lg animation transition-all ${
+          className={`relative w-full max-w-4xl p-6 bg-alice-blue text-polynesian-blue rounded shadow-lg animation transition-all ${
             transitioning
               ? direction === "up"
                 ? "animate-slide-out-up"
@@ -88,6 +88,11 @@ export default function Quiz() {
               : "animate-slide-in-down"
           }`}
         >
+          {/* Question Indicator */}
+          <div className="text-center mb-4 text-xl font-semibold">
+            Question {currentQuestion + 1} of {questions.length}
+          </div>
+
           {/* Adjust Question layout to remove space */}
           <div className="flex-grow flex items-center w-full">
             <Question

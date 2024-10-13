@@ -1,2 +1,4 @@
 openai==1.23.2
 typing
+python-dotenv
+os
