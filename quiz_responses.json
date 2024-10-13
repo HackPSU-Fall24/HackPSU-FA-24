@@ -1,34 +1,32 @@
 {
     "quiz_responses": {
         "enjoyed_subjects": [
-            "Chemistry"
+            "Computer Science"
         ],
         "struggled_subjects": [
-            "Computer Sceince"
+            "Physics"
         ],
         "engineering_interests": [
-            "Chemical engineering",
-            "biomedical Engineering"
+            "Computer Science"
         ],
         "engineering_projects": "no",
-        "math_comfort_level": "2",
-        "math_interest": "no",
+        "math_comfort_level": "",
+        "math_interest": "",
         "programming_languages": [
-            "none"
+            "Python"
         ],
-        "programming_interest": "maybe",
+        "programming_interest": "Yes",
         "career_goals": [
-            "work in industry"
+            "Work in industry"
         ],
         "industry_interest": [
-            "manufacturing",
-            "pharmaceuticals"
+            "RObotics/AI"
         ],
-        "extracurricular_interest": "maybe",
+        "extracurricular_interest": "YEs",
         "study_hours_per_week": "10-15 hours",
         "elective_interests": [
-            "business and managment"
+            "Data Sciecne and AI"
         ]
     },
-    "suggested_major": "Based on the quiz responses, the student seems to have a strong interest in Chemical Engineering and Biomedical Engineering, especially with a preference for the pharmaceutical industry. They enjoyed chemistry in high school but struggled with computer science, indicating a potential weakness in programming and a lack of interest in applying mathematics in areas such as data analysis or optimization.\n\nGiven the student's interests and strengths, the following majors would be suitable:\n\n1. **Chemical Engineering BS** - This major aligns closely with the student's interests in chemistry and the pharmaceutical industry. It provides a strong foundation in the principles of chemical processes, which is essential for careers in manufacturing and pharmaceuticals.\n\n2. **Biomedical Engineering BS** - This major would also be a good fit, especially if the student is interested in applying engineering principles to the medical and biological fields. It focuses on the integration of engineering with the life sciences, which aligns with the student's interest in biomedical applications.\n\n3. **Biological Engineering BS** - This major combines engineering principles with biological sciences, which could appeal to the student given their interest in both chemical processes and the life sciences.\n\nThe ranking is based on the student\u2019s expressed interests and strengths:\n\n1. **Chemical Engineering BS**\n2. **Biomedical Engineering BS**\n3. **Biological Engineering BS**\n\nThese majors offer a balance of the student's interests in chemistry and the pharmaceutical industry while providing solid career opportunities in the engineering field."
+    "suggested_major": "Based on the quiz responses, the student shows a strong interest in Computer Science and is comfortable with advanced mathematics such as Calculus and Linear Algebra. They are also interested in programming and software development, particularly in the context of Robotics/AI, and have a desire to explore electives in Data Science and AI.\n\nTaking all of this into account, the most suitable major for this student is:\n\n1. **Computer Science BS**: This major aligns perfectly with the student's interests in programming, software development, and data sciences. It provides a solid foundation in computational methods and applications, which is essential for a career in technology and robotics.\n\nAdditionally, considering the student's interest in pursuing minors or certificates, the following options could complement their major:\n\n- **Data Sciences BS**: This major focuses on developing skills in data management and analysis, which is relevant to the student's interest in AI and data science.\n- **Cybersecurity Computational Foundations Minor**: This minor would provide valuable skills in securing computing systems, which is increasingly important in the field of computer science.\n\nOverall, the recommended major is **Computer Science BS**, with potential minors in **Data Sciences** or **Cybersecurity** to further enhance their skill set."
 }
