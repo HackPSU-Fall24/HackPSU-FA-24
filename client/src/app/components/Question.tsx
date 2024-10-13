@@ -30,7 +30,7 @@ export default function Question({
             className={`cursor-pointer block mb-2 px-4 py-2 rounded-lg border-2 text-smoky-black transition-all 
         ${
           response.includes(option)
-            ? "bg-celestial-blue text-white border-celestial-blue"
+            ? "bg-bright-pink-crayola text-white border-bright-pink-crayola"
             : "bg-alice-blue border-gray-300"
         }`}
           >
@@ -52,12 +52,12 @@ export default function Question({
             className={`cursor-pointer block mb-2 px-4 py-2 rounded-lg border-2 text-center transition-all 
         ${
           response === option
-            ? "bg-celestial-blue text-white border-celestial-blue"
+            ? "bg-bright-pink-crayola text-white border-bright-pink-crayola"
             : "bg-alice-blue text-smoky-black border-gray-300"
         }`}
             style={{
-              backgroundColor: response === option ? "#279af1" : "#f6fbff",
-              color: response === option ? "#ffffff" : "#070600", // White for selected text, Smoky Black for default
+              backgroundColor: response === option ? "#279af1" : "#ea526fff",
+              color: response === option ? "#ffffff" : "#ea526fff", // White for selected text, Smoky Black for default
             }}
           >
             {option}
@@ -72,7 +72,7 @@ export default function Question({
             max="5"
             value={response || 3} // Default to the middle value if not set
             onChange={(e) => onOptionChange(Number(e.target.value))}
-            className="w-full accent-celestial-blue"
+            className="w-full accent-bright-pink-crayola"
           />
           <div className="flex justify-between text-sm mt-1">
             {[1, 2, 3, 4, 5].map((num) => (
