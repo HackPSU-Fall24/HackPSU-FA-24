@@ -2,24 +2,27 @@
 
 "use client";
 
-import { useState, useEffect } from 'react';
-import questions from '../data/questions';
-import Question from './Question';
-import Navigation from './Navigation';
-import TopBar from './TopBar';
-import Footer from './Footer';
+import { useState, useEffect } from "react";
+import questions from "../data/questions";
+import Question from "./Question";
+import Navigation from "./Navigation";
+import TopBar from "./TopBar";
+import Footer from "./Footer";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [responses, setResponses] = useState<any[]>(Array(questions.length).fill([]));
+  const [responses, setResponses] = useState<any[]>(
+    Array(questions.length).fill([])
+  );
   const [offsetY, setOffsetY] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false); // State to manage animation timing
-  const [direction, setDirection] = useState<'slide-up' | 'slide-down'>('slide-up');
+  const [transitioning, setTransitioning] = useState(false);
+  const [nextQuestionIndex, setNextQuestionIndex] = useState(currentQuestion);
+  const [direction, setDirection] = useState<"up" | "down">("up");
 
   useEffect(() => {
     const handleScroll = () => setOffsetY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleOptionChange = (response: any) => {
@@ -28,29 +31,40 @@ export default function Quiz() {
     setResponses(updatedResponses);
   };
 
-  const nextQuestion = () => {
-    if (currentQuestion < questions.length - 1 && !isAnimating) {
-      setDirection('slide-up'); // Set direction for slide-up
-      setIsAnimating(true); // Start animation
+  const triggerTransition = (
+    nextIndex: number,
+    slideDirection: "up" | "down"
+  ) => {
+    setDirection(slideDirection);
+    setTransitioning(true);
+    setNextQuestionIndex(nextIndex);
+
+    // Animate out first
+    setTimeout(() => {
+      // Now update to the next question after the first transition is done
+      setCurrentQuestion(nextIndex);
+      // Allow a bit of time before animating in the next question
       setTimeout(() => {
-        setCurrentQuestion(currentQuestion + 1);
-        setIsAnimating(false); // End animation
-      }, 500); // Duration matches animation time
+        setTransitioning(false);
+      }, 250); // Match this with the incoming animation duration
+    }, 250); // Match this with the outgoing animation duration
+  };
+
+  const nextQuestion = () => {
+    if (currentQuestion < questions.length - 1 && !transitioning) {
+      triggerTransition(currentQuestion + 1, "up");
     }
   };
 
   const prevQuestion = () => {
-    if (currentQuestion > 0 && !isAnimating) {
-      setDirection('slide-down'); // Set direction for slide-down
-      setIsAnimating(true); // Start animation
-      setTimeout(() => {
-        setCurrentQuestion(currentQuestion - 1);
-        setIsAnimating(false); // End animation
-      }, 500); // Duration matches animation time
+    if (currentQuestion > 0 && !transitioning) {
+      triggerTransition(currentQuestion - 1, "down");
     }
   };
 
-  const isNextDisabled = questions[currentQuestion].required ? (responses[currentQuestion]?.length ?? 0) === 0 : false;
+  const isNextDisabled = questions[currentQuestion].required
+    ? (responses[currentQuestion]?.length ?? 0) === 0
+    : false;
 
   return (
     <div className="flex flex-col min-h-screen text-alice-blue bg-polynesian-blue overflow-x-hidden">
@@ -59,22 +73,43 @@ export default function Quiz() {
         className="flex flex-col items-center justify-center h-screen p-8"
         style={{
           backgroundPositionY: offsetY * 0.5,
-          transition: 'background-position 0.5s ease-in-out',
+          transition: "background-position 0.5s ease-in-out",
         }}
       >
+        {/* Entire Container with white box and animation */}
         <div
-          className={`w-full max-w-2xl p-8 bg-alice-blue text-polynesian-blue rounded shadow-lg transform transition-all duration-700 ease-in-out hover:scale-105 ${
-            isAnimating ? (direction === 'slide-up' ? 'animate-slide-up' : 'animate-slide-down') : ''
+          className={`relative w-full max-w-2xl p-6 bg-alice-blue text-polynesian-blue rounded shadow-lg transition-all ${
+            transitioning
+              ? direction === "up"
+                ? "animate-slide-out-up"
+                : "animate-slide-out-down"
+              : direction === "up"
+              ? "animate-slide-in-up"
+              : "animate-slide-in-down"
           }`}
         >
-          <Question question={questions[currentQuestion]} response={responses[currentQuestion]} onOptionChange={handleOptionChange} />
-          <Navigation 
-            currentQuestion={currentQuestion} 
-            totalQuestions={questions.length} 
-            onNext={nextQuestion} 
-            onPrev={prevQuestion} 
-            isNextDisabled={isNextDisabled} 
-          />
+          {/* Adjust Question layout to remove space */}
+          <div className="flex-grow flex items-center w-full">
+            <Question
+              question={
+                questions[transitioning ? currentQuestion : nextQuestionIndex]
+              }
+              response={
+                responses[transitioning ? currentQuestion : nextQuestionIndex]
+              }
+              onOptionChange={handleOptionChange}
+            />
+          </div>
+          {/* Navigation without extra spacing */}
+          <div className="w-full mt-4">
+            <Navigation
+              currentQuestion={currentQuestion}
+              totalQuestions={questions.length}
+              onNext={nextQuestion}
+              onPrev={prevQuestion}
+              isNextDisabled={isNextDisabled}
+            />
+          </div>
         </div>
       </div>
       <Footer />

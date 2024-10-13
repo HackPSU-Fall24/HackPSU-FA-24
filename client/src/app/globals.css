@@ -47,38 +47,67 @@ body {
   animation: fadeIn 0.7s ease-in-out;
 }
 
-@keyframes slideUp {
-  0% {
+/* src/app/styles/QuizAnimations.css */
+
+/* Slide-in and slide-out animations */
+/* src/app/styles/QuizAnimations.css */
+
+@keyframes slide-in-up {
+  from {
     transform: translateY(100%);
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-@keyframes slideDown {
-  0% {
+@keyframes slide-out-up {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
     transform: translateY(-100%);
     opacity: 0;
   }
-  50% {
-    opacity: 1;
+}
+
+@keyframes slide-in-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.animate-slide-up {
-  animation: slideUp 0.5s ease-in-out forwards;
+@keyframes slide-out-down {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.animate-slide-in-up {
+  animation: slide-in-up 0.5s forwards ease-in-out;
 }
 
-.animate-slide-down {
-  animation: slideDown 0.5s ease-in-out forwards;
+.animate-slide-out-up {
+  animation: slide-out-up 0.5s forwards ease-in-out;
 }
+
+.animate-slide-in-down {
+  animation: slide-in-down 0.5s forwards ease-in-out;
+}
+
+.animate-slide-out-down {
+  animation: slide-out-down 0.5s forwards ease-in-out;
+}
+
