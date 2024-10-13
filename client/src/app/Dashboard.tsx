@@ -74,7 +74,7 @@ const Dashboard: React.FC = () => {
           <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Take the Quiz", href: "/quiz", icon: "📊" },
-              { title: "View Schedules", href: "/schedules", icon: "📅" },
+              { title: "View Schedules", href: "/schedule", icon: "📅" },
               { title: "Profile", href: "/profile", icon: "👤" },
             ].map((feature) => (
               <Link
@@ -94,25 +94,31 @@ const Dashboard: React.FC = () => {
         {/* Testimonials Section */}
         <section className="relative z-10 bg-alice-blue bg-opacity-10 backdrop-blur-md py-20">
           <div className="container mx-auto px-6 text-center text-smoky-black">
-            <h2 className="text-4xl font-bold mb-8 text-alice-blue">
-              What Our Users Say
+            <h2 className="text-4xl font-bold mb-8 text-polynesian-blue">
+              About Us
             </h2>
-            <div className="flex flex-wrap justify-center space-x-4">
-              {[
-                "Life-changing platform!",
-                "It's incredibly helpful!",
-                "I'd highly recommend it!",
-              ].map((testimonial, idx) => (
-                <div
-                  key={idx}
-                  className="bg-alice-blue bg-opacity-90 p-6 rounded-lg shadow-lg max-w-xs text-smoky-black transform hover:scale-105 transition"
-                >
-                  <p className="text-lg">{testimonial}</p>
-                  <span className="text-bright-pink-crayola font-bold mt-4 block">
-                    User {idx + 1}
-                  </span>
-                </div>
-              ))}
+            <div className="max-w-3xl mx-auto bg-alice-blue bg-opacity-90 p-6 rounded-lg shadow-lg text-lg text-smoky-black">
+              <p>
+                At COURSE PAiLOT, we believe that every student deserves a clear
+                and confident start to their academic journey. Our mission is to
+                transform the way students approach college planning by
+                providing personalized, data-driven guidance that unlocks their
+                potential and aligns with their dreams.
+              </p>
+              <p className="mt-4">
+                We’re more than just a scheduling tool—we are a catalyst for
+                student success. With cutting-edge technology and a passion for
+                education, we empower students to explore their unique paths,
+                make informed choices, and step into their futures with purpose
+                and excitement.
+              </p>
+              <p className="mt-4">
+                Together, we’re not just planning courses—we’re building the
+                leaders, innovators, and visionaries of tomorrow. Let COURSE
+                PAiLOT be your compass as you embark on this incredible journey,
+                because every student deserves a future that’s as bold and
+                bright as they are.
+              </p>
             </div>
           </div>
         </section>
