@@ -7,26 +7,28 @@
             "Physics"
         ],
         "engineering_interests": [
-            "Computer Sceince"
+            "Computer Science"
         ],
         "engineering_projects": "no",
-        "math_comfort_level": "",
-        "math_interest": "",
+        "math_comfort_level_Calculus": "5",
+        "math_comfort_level_Linear Algebra": "5",
         "programming_languages": [
             "Python"
         ],
         "programming_interest": "Yes",
         "career_goals": [
-            "Work in industry"
+            "Work in Industry"
         ],
         "industry_interest": [
-            "Robotics/AI"
+            "RObotics/AI"
         ],
         "extracurricular_interest": "Yes",
         "study_hours_per_week": "10-15 hours",
         "elective_interests": [
-            "Data Science And AI"
-        ]
+            "Data Science and AI"
+        ],
+        "minor_interests": "Yes",
+        "minor_pursuing": "Statistics"
     },
-    "suggested_major": "Based on your quiz responses, I suggest you consider pursuing a major in **Computer Science**. Your strong interest and enjoyment in computer science, along with your comfort level in calculus and linear algebra, make this a suitable choice for you. \n\nAdditionally, your interest in programming and software development aligns perfectly with the skills you'll develop in a Computer Science program. Since you expressed an interest in Robotics/AI and Data Science, a Computer Science major will equip you with the necessary knowledge and skills to excel in these fields.\n\nGiven that you're open to pursuing minors or certificates, you might also consider the **Computational Sciences minor** or **Data Sciences minor** to complement your major. These options will further enhance your expertise in data analysis and AI, which are highly relevant to your career goals. \n\nOverall, majoring in Computer Science while pursuing a minor in Computational Sciences or Data Sciences will provide you with a solid foundation for a successful career in the industry."
+    "suggested_major": "Based on your quiz responses, I recommend the following major:\n\n**Computer Engineering BS**\n\nThis major aligns well with your interest in Computer Science and your comfort level with Calculus and Linear Algebra. Computer Engineering combines the principles of electrical engineering and computer science, which is perfect for your interests in software development, robotics, and AI.\n\nAdditionally, given your strong programming background with Python and your interest in pursuing courses related to Data Science and AI, this major will provide you with the necessary skills to excel in those areas.\n\nYou also expressed openness to pursuing minors or certificates, which can further enhance your education and career prospects. Here are a couple of minors that would complement your Computer Engineering major:\n\n1. **Data Sciences Minor**: This will deepen your understanding of data analytics, a valuable skill in the AI and robotics sectors.\n2. **Statistics Minor**: This ties in well with your interest in statistics and is beneficial in many engineering applications, especially in data-driven fields.\n\nOverall, pursuing a major in Computer Engineering with a minor in Data Sciences or Statistics will prepare you for a successful career in the industry, especially in fields related to robotics and AI."
 }
