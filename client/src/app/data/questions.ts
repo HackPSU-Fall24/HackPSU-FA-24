@@ -46,6 +46,11 @@ const questions: Question[] = [
     type: "multi-select",
   },
   {
+    title: "Are you interested in learning more about programming and software development in your engineering career?",
+    options: ["Yes", "No", "Maybe"],
+    type: "single-select"
+  },
+  {
     title: "What is your long-term career goal in engineering? (Select all that apply)",
     options: ["Work in industry", "Work in academia or research", "Start my own business (entrepreneurship)", "Government/Policy", "Unsure"],
     type: "multi-select",
@@ -71,10 +76,14 @@ const questions: Question[] = [
     type: "multi-select",
   },
   {
-    title: "Are you interested in interdisciplinary studies, combining engineering with fields like biology, business, or the arts?",
+    title: "Are you open to pursuing minors or certificates along with your engineering degree",
     options: ["Yes", "No", "Maybe"],
-    type: "single-select",
+    type: "single-select"
   },
+  {
+    title: "What types of minors or certificates are you interested in pursuing? (e.g., Business, Computer Science, Mathematics, etc.)",
+    type: "text"
+  }
 ];
 
 export default questions;

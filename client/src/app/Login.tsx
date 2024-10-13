@@ -1,26 +1,32 @@
 "use client";
 
+import { useState } from "react";
 import { Heading, Grid, Flex, Link, Button, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import Divider from "./components/Divider";
 import Input from "./components/Input";
 import logo from "./public/image.png";
 import { motion } from "framer-motion";
+import { signIn } from "./service/auth";
 
 export default function Login() {
   const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    // Perform login actions here
-    // After successful login, navigate to Quiz page
-    router.push("/quiz");
+  const handleLogin = async () => {
+    try {
+      await signIn(email, password);
+      router.push("/"); // Redirect to dashboard after successful login
+    } catch (error) {
+      console.error("Error signing in:", error);
+    }
   };
 
   const handleRegister = () => {
-    // Perform login actions here
-    // After successful login, navigate to Quiz page
     router.push("/signup");
   };
+
   return (
     <motion.div
       initial={{ x: "100%", opacity: 0 }}
@@ -67,6 +73,8 @@ export default function Login() {
         >
           <Input
             placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             backgroundColor="white"
             color="brand.polynesian-blue"
             focusBorderColor="brand.alice-blue"
@@ -75,6 +83,9 @@ export default function Login() {
 
           <Input
             placeholder="Password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             marginTop={2}
             backgroundColor="white"
             color="brand.polynesian-blue"

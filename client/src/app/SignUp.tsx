@@ -7,20 +7,29 @@ import Input from "./components/Input";
 import logo from "./public/image.png";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { signUp } from "./service/auth";
 
 export default function Signup() {
   const router = useRouter();
   const [isInverted, setIsInverted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     // Trigger the color inversion transition
     setIsInverted(true);
   }, []);
 
-  const handleSignup = () => {
-    // Perform signup actions here
-    // After successful signup, navigate to the Login page
-    router.push("/login");
+  const handleSignup = async () => {
+    try {
+      await signUp(email, password, name);
+      // Additional logic to save the user's name can be added here, if needed
+      router.push("/"); // Redirect to Login after signup
+    } catch (error) {
+      console.error("Error signing up:", error);
+      // Optionally, display an error message to the user
+    }
   };
 
   return (
@@ -60,6 +69,8 @@ export default function Signup() {
         >
           <Input
             placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             backgroundColor="white"
             color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
             focusBorderColor="brand.alice-blue"
@@ -68,6 +79,8 @@ export default function Signup() {
 
           <Input
             placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             marginTop={2}
             backgroundColor="white"
             color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
@@ -77,6 +90,9 @@ export default function Signup() {
 
           <Input
             placeholder="Password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             marginTop={2}
             backgroundColor="white"
             color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
