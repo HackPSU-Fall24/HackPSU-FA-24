@@ -1,9 +1,14 @@
 import openai
 import Quiz
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 quiz_responses= Quiz.engineering_quiz()
+
 # Set your OpenAI API key
-openai.api_key = 'sk-lWf7hFhGj27tvfYcKiZ7hZQpWw9tXh73XTYFqqzzLHT3BlbkFJfP_YFR9_W1hRkJ9owaV7GB4Zz17FP5bslOzuqFDIkA'
+openai.api_key = os.getenv("API_KEY")
 
 def suggest_major(responses):
     # Create a prompt based on the quiz responses
