@@ -2,4 +2,4 @@
 
 # .env format
 
-API_KEY=<api-key-here>
+API_KEY=api-key-here
