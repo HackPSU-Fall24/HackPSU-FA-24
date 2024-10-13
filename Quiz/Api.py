@@ -1,13 +1,19 @@
 import openai
 import Quiz
+from dotenv import load_dotenv
+import os
+import json
+
+load_dotenv()
 
 quiz_responses= Quiz.engineering_quiz()
+
 # Set your OpenAI API key
-openai.api_key = 'sk-lWf7hFhGj27tvfYcKiZ7hZQpWw9tXh73XTYFqqzzLHT3BlbkFJfP_YFR9_W1hRkJ9owaV7GB4Zz17FP5bslOzuqFDIkA'
+openai.api_key = os.getenv("API_KEY")
 
 def suggest_major(responses):
     # Create a prompt based on the quiz responses
-    prompt = f"""
+    '''prompt = f"""
     Based on the following quiz responses, suggest the most suitable engineering major:
     
     1. Enjoyed Subjects: {', '.join(responses["What subjects did you enjoy the most in high school? (Select all that apply)"])}
@@ -25,7 +31,7 @@ def suggest_major(responses):
     13. Elective Interests: {responses["What kind of elective courses would you like to explore outside of core engineering subjects? (Select all that apply)"]}
     
     Suggest a suitable engineering major.
-    """
+    """'''
     
     # Call OpenAI's API to analyze the responses and suggest a major
     response = openai.chat.completions.create(
@@ -39,11 +45,25 @@ def suggest_major(responses):
     )
 
     # Return the model's response
-    return response.choices[0].message.content
+    suggested_major = response.choices[0].message.content
+    
+    return suggested_major
 
-# Example use of the function
+# Function to save quiz responses and suggestions into a JSON file
+def save_to_json(quiz_responses, suggested_major, filename="quiz_responses.json"):
+    # Prepare the data for saving
+    data = {
+        "quiz_responses": quiz_responses,
+        "suggested_major": suggested_major
+    }
+    
+    # Write data to JSON file
+    with open(filename, "w") as json_file:
+        json.dump(data, json_file, indent=4)
+    
+    print(f"Data saved to {filename}.")
+print(quiz_responses)
 major_suggestion = suggest_major(quiz_responses)
-print(f"Suggested Engineering Major: {major_suggestion}")
 
 
 

@@ -1,0 +1,32 @@
+{
+    "quiz_responses": {
+        "What subjects did you enjoy the most in high school? (Select all that apply)": [
+            "Computer Science"
+        ],
+        "What subjects did you struggle with the most in high school? (Select all that apply)": [
+            "Physics"
+        ],
+        "Which engineering fields are you most interested in? (Select up to three)": [
+            "Computer Science"
+        ],
+        "Have you participated in any projects or extracurricular activities related to engineering? If yes, please describe.": "no",
+        "On a scale of 1-5, how comfortable are you with the following areas of mathematics?": "5",
+        "Are you interested in applying mathematics in areas such as data analysis, simulations, or optimization in engineering?": "Yes",
+        "Which programming languages are you familiar with? (Select all that apply)": [
+            "Python"
+        ],
+        "Are you interested in learning more about programming and software development in your engineering career?": "yes",
+        "What is your long-term career goal in engineering? (Select all that apply)": [
+            "Work in Industry"
+        ],
+        "Which industries or sectors interest you the most? (Select up to three)": [
+            "Robotics/AI"
+        ],
+        "Are you interested in joining engineering clubs, competitions, or research groups during your time in college?": "Yes",
+        "How many hours per week do you typically dedicate to studying outside of class?": "10-15 hours",
+        "What kind of elective courses would you like to explore outside of core engineering subjects? (Select all that apply)": [
+            "Data Science and AI"
+        ]
+    },
+    "suggested_major": "Based on the quiz responses provided, I would suggest the major of Computer Science or Software Engineering. This recommendation is based on the student's enjoyment of Computer Science in high school, interest in applying mathematics in engineering, familiarity with Python programming language, interest in learning more about programming and software development, and long-term career goal of working in industry. These majors align well with the student's interests and goals in the field of engineering."
+}
