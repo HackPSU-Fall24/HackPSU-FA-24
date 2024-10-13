@@ -20,6 +20,25 @@ for link in majors:
     if '/undergraduate/colleges/engineering/' in href:
         engineering_majors.append(base_url + href)
 
+# General Education section
+general_education = {
+    "GQ": "6 credits (Quantification)",
+    "GWS": "9 credits (Writing and Speaking)",
+    "GA": "3 credits (Arts)",
+    "GH": "3 credits (Humanities)",
+    "GS": "3 credits (Social and Behavioral Sciences)",
+    "GN": "3 credits (Natural Sciences)",
+    "Inter-Domain": "6 credits (Integrative Studies)"
+}
+
+# University Requirements section
+university_requirements = {
+    "FYS": "1-3 credits (First Year Seminar)",
+    "US Cultures": "3 credits (United States Cultures)",
+    "IL Cultures": "3 credits (International Cultures)",
+    "WAC": "3 credits (Writing Across the Curriculum)"
+}
+
 # Function to scrape program details
 def scrape_major_details(major_url):
     response = requests.get(major_url)
@@ -58,7 +77,9 @@ def scrape_major_details(major_url):
         'degree_requirements': {
             'common_requirements': common_requirements,
             'specific_requirements': specific_requirements
-        }
+        },
+        'general_education': general_education,  # Include General Education requirements
+        'university_requirements': university_requirements  # Include University Requirements
     }
 
 # Iterate through all engineering majors and scrape details

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
 import re
+import json
 
 # Function to clean text by removing extra spaces
 def clean_text(text):
@@ -35,12 +35,14 @@ def extract_gen_ed(attributes_block):
     return attributes_text
 
 # Function to scrape courses from each subject page
-def scrape_courses(subject_url, writer):
+def scrape_courses(subject_url):
     response = requests.get(subject_url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Finding all course blocks
     courses = soup.find_all('div', class_='courseblock')
+
+    course_data = []
 
     # Looping through each course block to extract data
     for course in courses:
@@ -76,32 +78,46 @@ def scrape_courses(subject_url, writer):
         attributes_block = course.find_all('p', class_='noindent')
         attributes_text = extract_gen_ed(attributes_block)
 
-        # Writing the extracted data to CSV
-        writer.writerow([course_name, course_title, credits, description_text, prerequisites_text, concurrent_text, attributes_text])
+        # Appending the extracted data as a dictionary
+        course_data.append({
+            "course_name": course_name,
+            "course_title": course_title,
+            "credits": credits,
+            "description": description_text,
+            "prerequisites": prerequisites_text,
+            "concurrent": concurrent_text,
+            "attributes": attributes_text
+        })
+
+    return course_data
 
 # Function to scrape all subjects from the main undergraduate page
-def scrape_subjects(main_url, csv_filename):
+def scrape_subjects(main_url, json_filename):
     response = requests.get(main_url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Finding the list of subjects from the left panel (not buttons)
     subject_links = soup.select('ul.nav.leveltwo li a')
 
-    # Open CSV file for writing
-    with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write CSV header
-        writer.writerow(['Course Name', 'Course Title', 'Credits', 'Description', 'Prerequisites', 'Concurrent', 'Attributes'])
+    all_course_data = {}
 
-        # Loop through each subject and scrape courses
-        for link in subject_links:
-            subject_url = "https://bulletins.psu.edu" + link['href']
-            print(f"Scraping subject: {link.get_text(strip=True)}")
-            scrape_courses(subject_url, writer)
+    # Loop through each subject and scrape courses
+    for link in subject_links:
+        subject_url = "https://bulletins.psu.edu" + link['href']
+        subject_name = link.get_text(strip=True)
+        print(f"Scraping subject: {subject_name}")
+        course_data = scrape_courses(subject_url)
+
+        # Store the course data under the subject name
+        all_course_data[subject_name] = course_data
+
+    # Save all course data to a JSON file
+    with open(json_filename, 'w', encoding='utf-8') as json_file:
+        json.dump(all_course_data, json_file, indent=4)
 
 # Main function to start scraping
 if __name__ == "__main__":
     main_url = 'https://bulletins.psu.edu/university-course-descriptions/undergraduate/'
-    csv_filename = 'psu_courses.csv'
-    scrape_subjects(main_url, csv_filename)
-    print(f"Courses scraped and saved to {csv_filename}")
+    json_filename = 'psu_courses.json'
+    scrape_subjects(main_url, json_filename)
+    print(f"Courses scraped and saved to {json_filename}")

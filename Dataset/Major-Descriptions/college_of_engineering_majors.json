@@ -5,6 +5,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Architectural engineering bae": {
@@ -18,6 +33,21 @@
                 "Mechanical Option (35 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nAE\u00a0404\nBuilding Structural Systems in Steel and Concrete\n3\n \nAE\u00a0453\nLoad and Energy Use Simulations for Buildings\n3\n \nAE\u00a0454\nAdvanced Heating, Ventilating, and Air Conditioning\n3\n \nAE\u00a0455\nAdvanced Heating, Ventilating, and Air Conditioning System Design\n3\n \nAE\u00a0457\nHVAC Control Systems\n3\n \nAE\u00a0458\nAdvanced Architectural Acoustics and Noise Control\n3\n \nAE\u00a0467\nAdvanced Building Electrical System Design\n3\n \nME\u00a0320\nFluid Flow\n3\n \nME\u00a0410\nHeat Transfer\n3\n \nSupporting Courses and Related Areas\n \nSelect 8 credits from technical courses on department option list \n \n1\n8",
                 "Structural Option (35 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nAE\u00a0401\nDesign of Steel and Wood Structures for Buildings\n3\n \nAE\u00a0402\nDesign of Concrete Structures for Buildings\n3\n \nAE\u00a0403\nAdvanced Steel Design for Buildings\n3\n \nAE\u00a0405\nGeotechnical Engineering\n4\n \nAE\u00a0430\nIndeterminate Structures\n3\n \nAE\u00a0431\nAdvanced Concrete Design for Buildings\n3\n \nCE\u00a0209\nFundamentals of Surveying\n2\n \nEMCH\u00a0315\nMechanical Response of Engineering Materials\n2\n \nEMCH\u00a0316\nExperimental Determination of Mechanical Response of Materials\n1\n \nSupporting Courses and Related Areas\n \nSelect 11 credits from technical courses on department list\n \n1\n11"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Biological engineering bs": {
@@ -30,6 +60,21 @@
                 "Food and Biological Processing Engineering Option (33-34 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nBE\u00a0465\nFood and Biological Process Engineering\n3\n \nBE\u00a0468\nMicrobiological Engineering\n3\n \nAdditional Courses\n \nCHEM\u00a0202\nFundamentals of Organic Chemistry I\n3\n \nor\u00a0\nCHEM\u00a0210\n Organic Chemistry I\n \nSelect one of the following:\n3-4\n \nBIOL\u00a0230W\nBiology:  Molecules and Cells\n \nBMB\u00a0211\nElementary Biochemistry\n \nBMB/MICRB 251\nMolecular and Cell Biology I\n \nBME\u00a0201\nFundamentals of Cells and Molecules\n \nAdditional Courses: Require a grade of C or better\n \nCE\u00a0360\nFluid Mechanics\n3\n \nor\u00a0\nME\u00a0320\n Fluid Flow\n \nSupporting Courses and Related Areas\n \nSelect 6 credits in biological/food science\n \n1\n6\n \nSelect 6 credits in engineering science/design\n \n1\n6\n \nSelect 6 credits in technical elective\n \n1,2\n6",
                 "Natural Resources Engineering Option (33 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nBE\u00a0467\nDesign of Stormwater and Erosion Control Facilities\n3\n \nBE\u00a0477\nLand-Based Waste Disposal\n3\n \nBE\u00a0487\nSimulation Modeling for Water Resources Management\n3\n \nSOILS\u00a0101\nIntroductory Soil Science \n3\n \nPrescribed Courses: Require a grade of C or better\n \nABSM\u00a0309\nMeasurement & Monitoring of Hydrologic Systems\n3\n \nBE\u00a0307\nPrinciples of Soil and Water Engineering\n3\n \nCE\u00a0360\nFluid Mechanics\n3\n \nSupporting Courses and Related Areas\n \nSelect 6 credits in engineering science/design\n \n1\n6\n \nSelect 3 credits in biological/environmental science\n \n1\n3\n \nSelect 3 credits in technical elective\n \n1,2\n3"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Biological engineering minor": {
@@ -38,6 +83,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Biomedical engineering technology aet": {
@@ -46,6 +106,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Biomedical engineering bs": {
@@ -59,6 +134,21 @@
                 "Biomaterials Option (24 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nBME\u00a0443\nBiomedical Materials\n3\n \nBME\u00a0446\nPolymers in Biomedical Engineering\n3\n \nMATSE\u00a0201\nIntroduction to Materials Science\n3\n \nAdditional Courses\n \nBME\u00a0408\nSolid Mechanics of Biological Materials\n3\n \nor\u00a0\nBME\u00a0409\n Biofluid Mechanics\n \nor\u00a0\nBME\u00a0413\n Mass Transport in Biological Systems\n \nCHEM\u00a0202\nFundamentals of Organic Chemistry I\n3\n \nor\u00a0\nCHEM\u00a0210\n Organic Chemistry I\n \nSupporting Courses and Related Areas\n \nSelect 3 credits from Related Electives department list\n3\n \nSelect 6 credits from Biomaterials Option department list\n6",
                 "Biomechanics Option (24 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nBME\u00a0408\nSolid Mechanics of Biological Materials\n3\n \nBME\u00a0409\nBiofluid Mechanics\n3\n \nEMCH\u00a0212\nDynamics\n3\n \nEMCH\u00a0315\nMechanical Response of Engineering Materials\n2\n \nEMCH\u00a0316\nExperimental Determination of Mechanical Response of Materials\n1\n \nSupporting Courses and Related Areas\n \nSelect 9 credits from Biomechanics Option department list\n9\n \nSelect 3 credits from Related Electives department list\n3"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Biomedical engineering minor": {
@@ -67,6 +157,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Chemical engineering bs": {
@@ -75,6 +180,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Civil engineering bs": {
@@ -83,6 +203,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Computational sciences minor": {
@@ -91,6 +226,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Computer engineering bs": {
@@ -99,6 +249,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Computer engineering minor": {
@@ -107,6 +272,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Computer science bs": {
@@ -115,6 +295,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Cybersecurity computational foundations minor": {
@@ -123,6 +318,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Data sciences bs": {
@@ -135,6 +345,21 @@
                 "Computational Data Sciences (DTSCE_BS): 47 credits": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nPrescribed Courses: Require a grade of C or better\n \nCMPSC\u00a0221\nObject Oriented Programming with Web-Based Applications\n3\n \nCMPSC\u00a0360\nDiscrete Mathematics for Computer Science\n3\n \nCMPSC\u00a0442\nArtificial Intelligence\n3\n \nCMPSC\u00a0448\nMachine Learning and Algorithmic AI\n3\n \nCMPSC\u00a0461\nProgramming Language Concepts\n3\n \nCMPSC\u00a0465\nData Structures and Algorithms\n3\n \nDS/CMPSC 410\nProgramming Models for Big Data\n3\n \nMATH\u00a0230\nCalculus and Vector Analysis\n4\n \nSTAT/MATH 414\nIntroduction to Probability Theory\n3\n \nSTAT/MATH 415\nIntroduction to Mathematical Statistics\n3\n \nAdditional Courses\n \nAdditional Courses: Require a grade of C or better\n \nDS\u00a0200\nIntroduction to Data Sciences\n4\n \nor\u00a0\nSTAT\u00a0200\n Elementary Statistics \n \nSupporting Courses and Related Areas\n \n1\n \nSelect 6 credits from Computational Option List A in Appendix C\n6\n \nSelect 6 credits from Computational Option List B in Appendix C\n6",
                 "Statistical Modeling Data Sciences (DTSCS_BS): 38 credits": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nPrescribed Courses: Require a grade of C or better\n \nMATH\u00a0230\nCalculus and Vector Analysis\n4\n \nSTAT/MATH 414\nIntroduction to Probability Theory\n3\n \nSTAT/MATH 415\nIntroduction to Mathematical Statistics\n3\n \nSTAT\u00a0440\nComputational Statistics\n3\n \nSTAT\u00a0462\nApplied Regression Analysis\n3\n \nAdditional Courses\n \nAdditional Courses: Require a grade of C or better\n \nDS\u00a0200\nIntroduction to Data Sciences\n4\n \nor\u00a0\nSTAT\u00a0200\n Elementary Statistics \n \nDS\u00a0310\nMachine Learning for Data Analytics\n3\n \nor\u00a0\nCMPSC\u00a0448\n Machine Learning and Algorithmic AI\n \nMATH\u00a0311W\nConcepts of Discrete Mathematics\n3\n \nor\u00a0\nCMPSC\u00a0360\n Discrete Mathematics for Computer Science\n \nSupporting Courses and Related Areas\n \n1\n \nSelect 6 credits from Statistical Modeling Option List A courses, see Appendix D\n6\n \nSelect 6 credits from Statistical Modeling Option List B courses, see Appendix D\n6"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Electrical engineering technology aengt": {
@@ -143,6 +368,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Electrical engineering technology bs": {
@@ -154,6 +394,21 @@
                 "General Electrical Engineering Technology Option (26 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nENGR\u00a0320Y\nDesign for Global Society \n3\n \nAdditional Courses\n \nSystem Elective\n \nSelect 8 credits of technical electives from the following:\n8\n \nEET\u00a0408\nCommunication System Design\n \nEET\u00a0409\nPower System Analysis I\n \nEET\u00a0433\nControl System Analysis and Design\n \nElectronics Elective\n \nSelect 4 credits from the following:\n4\n \nEE\u00a0413\nPower Electronics\n \nEET\u00a0402\nHigh-Frequency Circuit Design\n \nEET\u00a0431\nAdvanced Electronic Design\n \nEET\u00a0461\nPower Electronics\n \nEET\u00a0496\nIndependent Studies\n \nGEET Technical Electives\n \nSelect 8 credits of GEET technical electives from the following:\n8\n \nCMPEN\u00a0431\nIntroduction to Computer Architecture\n \nCMPET\u00a0401\nData Communication and Networking\n \nCMPET\u00a0402\nData Communication and Networking Laboratory\n \nCMPET\u00a0403\nSwitching Circuit Design\n \nCMPET\u00a0412\n \nEE\u00a0413\nPower Electronics\n \nEE\u00a0442\nSolid State Devices\n \nEE\u00a0453\nFundamentals of Digital Signal Processing\n \nEE/EGEE/ESC 456\nIntroduction to Neural Networks\n \nEE\u00a0458\nDigital Image Processing and Computer Vision\n \nEET\u00a0402\nHigh-Frequency Circuit Design\n \nEET\u00a0408\nCommunication System Design\n \nEET\u00a0409\nPower System Analysis I\n \nEET\u00a0410\nPower System Analysis II\n \nEET\u00a0413\nOptoelectronics\n \nEET\u00a0414\nBiomedical Instrumentation\n \nEET\u00a0431\nAdvanced Electronic Design\n \nEET\u00a0433\nControl System Analysis and Design\n \nEET\u00a0456\nAutomation and Robotics\n \nEET\u00a0461\nPower Electronics\n \nEET\u00a0478\nDigital Communication Systems\n \nEET\u00a0496\nIndependent Studies\n \nScience, Engineering, and Technology (SET Electives)\n \nSelect 3 credits from the following:\n3\n \nBIOL\u00a0141\nIntroduction to Human Physiology \n \nCHEM\u00a0112\nChemical Principles II \n \nCHEM\u00a0113\nExperimental Chemistry II \n \nCMPSC\u00a0122\nIntermediate Programming\n \nCMPSC\u00a0132\nProgramming and Computation II: Data Structures\n \nCMPSC\u00a0200\nProgramming for Engineers with MATLAB \n \nCMPSC\u00a0201\nProgramming for Engineers with C++ \n \nCMPSC\u00a0312\nComputer Organization and Architecture\n \nEE\u00a0330\nEngineering Electromagnetics\n \nEE\u00a0341\nSemiconductor Device Principles\n \nEMCH\u00a0211\nStatics\n \nEMCH\u00a0212\nDynamics\n \nEMCH\u00a0213\nStrength of Materials\n \nMATH\u00a0220\nMatrices \n \nMATH\u00a0230\nCalculus and Vector Analysis\n \nMATH\u00a0231\nCalculus of Several Variables\n \nMATH\u00a0232\nIntegral Vector Calculus\n \nMATH\u00a0250\nOrdinary Differential Equations\n \nMATH\u00a0251\nOrdinary and Partial Differential Equations\n \nMATH\u00a0252\nPartial Differential Equations\n \nMATH\u00a0430\nLinear Algebra and Discrete Models I\n \nME\u00a0201\nIntroduction to Thermal Science\n \nME\u00a0300\nEngineering Thermodynamics I\n \nPHYS\u00a0213\nGeneral Physics:  Fluids and Thermal Physics \n \nPHYS\u00a0214\nGeneral Physics:  Wave Motion and Quantum Physics \n \nPHYS\u00a0237\nIntroduction to Modern Physics\n \nPHYS\u00a0462\nApplications of Physics in Medicine\n \nSSET\u00a0495\nInternship\n \nSTAT\u00a0200\nElementary Statistics",
                 "Power and Automation Option (26 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nAdditional Courses\n \nSystem Electives\n \nSelect 12 credits from the following:\n12\n \nEET\u00a0409\nPower System Analysis I\n \nEET\u00a0410\nPower System Analysis II\n \nEET\u00a0433\nControl System Analysis and Design\n \nEET\u00a0461\nPower Electronics\n \nEET\u00a0475\nIntermediate Programmable Logic Controllers\n \nAdditional Electives\n \nSelect 14 credits from the following:\n14\n \nCMPET\u00a0401\nData Communication and Networking\n \nCMPET\u00a0402\nData Communication and Networking Laboratory\n \nCMPET\u00a0403\nSwitching Circuit Design\n \nEET\u00a0341\nMeasurements and Instrumentation\n \nEET\u00a0402\nHigh-Frequency Circuit Design\n \nEET\u00a0408\nCommunication System Design\n \nEET\u00a0409\nPower System Analysis I\n \nEET\u00a0410\nPower System Analysis II\n \nEET\u00a0413\nOptoelectronics\n \nEET\u00a0414\nBiomedical Instrumentation\n \nEET\u00a0431\nAdvanced Electronic Design\n \nEET\u00a0433\nControl System Analysis and Design\n \nEET\u00a0456\nAutomation and Robotics\n \nEET\u00a0461\nPower Electronics\n \nEET\u00a0475\nIntermediate Programmable Logic Controllers\n \nEET\u00a0478\nDigital Communication Systems\n \nEET\u00a0495\nInternship\n \nEET\u00a0496\nIndependent Studies\n \nEET\u00a0497\nSpecial Topics\n \nEMCH\u00a0211\nStatics\n \nEMCH\u00a0212\nDynamics\n \nME\u00a0201\nIntroduction to Thermal Science"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Electrical engineering bs": {
@@ -162,6 +417,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Electro mechanical engineering technology bs": {
@@ -170,6 +440,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering community engagement certificate": {
@@ -178,6 +463,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering design digital tools certificate": {
@@ -186,6 +486,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering design certificate": {
@@ -194,6 +509,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering design minor": {
@@ -202,6 +532,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering leadership development minor": {
@@ -210,6 +555,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering mechanics minor": {
@@ -218,6 +578,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering science bs": {
@@ -226,6 +601,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Engineering bs": {
@@ -238,6 +628,21 @@
                 "Alternative Energy and Power Generation Option (45 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nCHEM\u00a0112\nChemical Principles II \n3\n \nCHEM\u00a0113\nExperimental Chemistry II \n1\n \nEE\u00a0314\nSignals and Circuits II\n3\n \nEE\u00a0485\nEnergy Systems and Conversion\n3\n \nEGEE\u00a0302\nPrinciples of Energy Engineering\n3\n \nEGEE\u00a0420\nHydrogen and Fuel Cells\n3\n \nEME\u00a0303\nFluid Mechanics in Energy and Mineral Engineering\n3\n \nME\u00a0345\nInstrumentation, Measurements, and Statistics\n4\n \nPrescribed Courses: Require a grade of C or better\n \nEE\u00a0210\nCircuits and Devices\n4\n \nAdditional Courses\n \nSelect 9 credits from the following:\n9\n \nEE\u00a0488\nPower Systems Analysis I\n \nEGEE\u00a0437\nDesign of Solar Energy Conversion Systems\n \nEGEE\u00a0438\nWind and Hydropower Energy Conversion\n \nEGEE\u00a0441\nElectrochemical Engineering Fundamentals\n \nNUCE\u00a0401\nIntroduction to Nuclear Engineering\n \nAdditional Courses: Require a grade of C or better\n \nME\u00a0300\nEngineering Thermodynamics I\n3\n \nor\u00a0\nEME\u00a0301\n Thermodynamics in Energy and Mineral Engineering\n \nSupporting Courses and Related Areas\n \nSelect 6 credits in Engineering Technical Elective courses, any 400-level courses in the College of Engineering or any 400-level courses with the Energy and Geoenvironmental Engineering (EGEE) abbreviation. Other substitutions outside the approved list must be approved by petition.\n6",
                 "Multidisciplinary Engineering Design Option (45 credits)": "Course List\n \n \n \n \n \n \n \n \nCode\n \nTitle\n \nCredits\n \n \n \n \nPrescribed Courses\n \nCMPEN\u00a0271\nIntroduction to Digital Systems\n3\n \nEDSGN\u00a0401\nEngineering Systems Design\n3\n \nEDSGN\u00a0402\nMaterials and Manufacturing\n4\n \nEDSGN\u00a0403\nProduct Realization\n3\n \nEDSGN\u00a0495\nInternship\n1\n \nEE\u00a0316\nIntroduction to Embedded Microcontrollers\n3\n \nENGR\u00a0407\nTechnology-Based Entrepreneurship\n3\n \nPrescribed Courses: Require a grade of C or better\n \nEDSGN\u00a0410\nRobotics Design and Applications\n4\n \nEE\u00a0210\nCircuits and Devices\n4\n \nEE\u00a0310\nElectronic Circuit Design I\n4\n \nEMCH\u00a0212\nDynamics\n3\n \nAdditional Courses\n \nCHEM\u00a0112\nChemical Principles II \n (or any GN)\n3\n \nCHEM\u00a0113\nExperimental Chemistry II \n (or any GN)\n1\n \nAdditional Courses: Require a grade of C or better\n \nSelect one of the following:\n3\n \nEME\u00a0301\nThermodynamics in Energy and Mineral Engineering\n \nME\u00a0201\nIntroduction to Thermal Science\n \nME\u00a0300\nEngineering Thermodynamics I\n \nSupporting Courses and Related Areas\n \nSelect 3 credits in Engineering Technical Elective courses, in consultation with an adviser, from department list.\n3"
             }
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Environmental engineering minor": {
@@ -246,6 +651,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Housing certificate": {
@@ -254,6 +674,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Industrial engineering bs": {
@@ -262,6 +697,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Information sciences technology aerospace engineering minor": {
@@ -270,6 +720,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Information sciences technology industrial engineering minor": {
@@ -278,6 +743,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "International engineering certificate": {
@@ -286,6 +766,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "International engineering minor": {
@@ -294,6 +789,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Mechanical engineering technology aengt": {
@@ -302,6 +812,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Mechanical engineering bs": {
@@ -310,6 +835,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Nanotechnology certificate": {
@@ -318,6 +858,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Nanotechnology minor": {
@@ -326,6 +881,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Nuclear engineering bs": {
@@ -334,6 +904,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Product innovation entrepreneurship certificate": {
@@ -342,6 +927,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Residential construction minor": {
@@ -350,6 +950,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Service enterprise engineering minor": {
@@ -358,6 +973,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Six sigma minor": {
@@ -366,6 +996,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Space systems engineering certificate": {
@@ -374,6 +1019,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Surveying engineering technology aengt": {
@@ -382,6 +1042,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     },
     "Surveying engineering bs": {
@@ -390,6 +1065,21 @@
         "degree_requirements": {
             "common_requirements": "Not found",
             "specific_requirements": {}
+        },
+        "general_education": {
+            "GQ": "6 credits (Quantification)",
+            "GWS": "9 credits (Writing and Speaking)",
+            "GA": "3 credits (Arts)",
+            "GH": "3 credits (Humanities)",
+            "GS": "3 credits (Social and Behavioral Sciences)",
+            "GN": "3 credits (Natural Sciences)",
+            "Inter-Domain": "6 credits (Integrative Studies)"
+        },
+        "university_requirements": {
+            "FYS": "1-3 credits (First Year Seminar)",
+            "US Cultures": "3 credits (United States Cultures)",
+            "IL Cultures": "3 credits (International Cultures)",
+            "WAC": "3 credits (Writing Across the Curriculum)"
         }
     }
 }
