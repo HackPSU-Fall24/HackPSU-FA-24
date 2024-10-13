@@ -1,7 +1,12 @@
 // src/pages/index.tsx
 
-import Quiz from './components/Quiz';
+import ThemeContainer from "./contexts/theme/ThemeContainer";
+import Login from "./Login";
 
 export default function Home() {
-  return <Quiz />;
+  return (
+    <ThemeContainer>
+      <Login />
+    </ThemeContainer>
+  );
 }

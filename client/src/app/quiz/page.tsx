@@ -4,10 +4,10 @@
 
 import { useState, useEffect } from "react";
 import questions from "../data/questions";
-import Question from "./Question";
-import Navigation from "./Navigation";
-import TopBar from "./TopBar";
-import Footer from "./Footer";
+import Question from "../components/Question";
+import Navigation from "../components/Navigation";
+import TopBar from "../components/TopBar";
+import Footer from "../components/Footer";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -78,7 +78,7 @@ export default function Quiz() {
       >
         {/* Entire Container with white box and animation */}
         <div
-          className={`relative w-full max-w-2xl p-6 bg-alice-blue text-polynesian-blue rounded shadow-lg transition-all ${
+          className={`relative w-full max-w-2xl p-6 bg-alice-blue text-polynesian-blue rounded shadow-lg animation transition-all ${
             transitioning
               ? direction === "up"
                 ? "animate-slide-out-up"
