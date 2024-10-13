@@ -37,17 +37,14 @@ def engineering_quiz():
         ],
         "Mathematics & Analytical Skills": [
             {
-                "question": "On a scale of 1-5, how comfortable are you with the following areas of mathematics?",
-                "options": [
-                    "Calculus", "Linear Algebra", "Probability and Statistics", 
-                    "Differential Equations", "Discrete Mathematics"
-                ],
+                "question": "On a scale of 1-5, how comfortable are you with Calculus?",
                 "type": "scale"
             },
             {
-                "question": "Are you interested in applying mathematics in areas such as data analysis, simulations, or optimization in engineering?",
-                "type": "yes/no"
+                "question": "On a scale of 1-5, how comfortable are you with Linear Algebra?",
+                "type": "scale"
             }
+            
         ],
         "Programming & Computational Skills": [
             {
@@ -101,6 +98,17 @@ def engineering_quiz():
                     "Environmental Studies", "Humanities and Social Sciences", "Other"
                 ],
                 "type": "multiple"
+            }
+        ],
+        "Minor Interests": [
+            {
+                "question": "Are you open to pursuing minors or certificates along with your engineering degree?",
+                "options": ["Yes", "No", "Maybe"],
+                "type": "single"
+            },
+            {
+                "question": "What types of minors or certificates are you interested in pursuing? (e.g., Business, Computer Science, Mathematics, etc.)",
+                "type": "open-ended"
             }
         ]
     }
