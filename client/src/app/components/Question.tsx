@@ -56,8 +56,8 @@ export default function Question({
             : "bg-alice-blue text-smoky-black border-gray-300"
         }`}
             style={{
-              backgroundColor: response === option ? "#279af1" : "#ea526fff",
-              color: response === option ? "#ffffff" : "#ea526fff", // White for selected text, Smoky Black for default
+              backgroundColor: response === option ? "#ea526fff" : "#f6fbff",
+              color: response === option ? "#ffffff" : "#070600", // White for selected text, Smoky Black for default
             }}
           >
             {option}

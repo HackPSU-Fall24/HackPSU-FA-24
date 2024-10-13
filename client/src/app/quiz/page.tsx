@@ -31,6 +31,7 @@ export default function Quiz() {
   const handleOptionChange = (response: any) => {
     const updatedResponses = [...responses];
     updatedResponses[currentQuestion] = response;
+    console.log(updatedResponses);
     setResponses(updatedResponses);
   };
 
@@ -69,15 +70,39 @@ export default function Quiz() {
   const submitQuiz = async () => {
     if (!user) return;
 
+    // Define labels corresponding to the array structure
+    const labels = [
+      "enjoyed_subjects", // Corresponds to responses[0]
+      "struggled_subjects", // Corresponds to responses[1]
+      "engineering_interests", // Corresponds to responses[2]
+      "engineering_projects", // Corresponds to responses[3]
+      "math_comfort_level_Calculus", // Corresponds to responses[4]
+      "math_comfort_level_Linear_Algebra", // Corresponds to responses[5]
+      "programming_languages", // Corresponds to responses[6]
+      "programming_interest", // Corresponds to responses[7]
+      "career_goals", // Corresponds to responses[8]
+      "industry_interest", // Corresponds to responses[9]
+      "extracurricular_interest", // Corresponds to responses[10]
+      "study_hours_per_week", // Corresponds to responses[11]
+      "elective_interests", // Corresponds to responses[12]
+      "minor_interests", // Corresponds to responses[13]
+      "minor_pursuing", // Corresponds to responses[14]
+    ];
+
     try {
-      await setDoc(
-        doc(db, "users", user.uid),
-        {
-          quizResponses: responses,
-          completedAt: new Date(),
-        },
-        { merge: true }
-      );
+      const userDocRef = doc(db, "Users", user.uid);
+
+      // Define labeledResponses with an index signature
+      const labeledResponses: { [key: string]: any } = {};
+
+      responses.forEach((value, index) => {
+        const label = labels[index] || `unknown_field_${index}`;
+        labeledResponses[label] = value;
+      });
+
+      await setDoc(userDocRef, labeledResponses, { merge: true });
+      await setDoc(userDocRef, { quiz_status: true }, { merge: true });
+
       router.push("/");
     } catch (error) {
       console.error("Error saving quiz responses:", error);
