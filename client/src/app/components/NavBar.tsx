@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           </button>
         </Link>
 
-        <Link href="/schedules">
+        <Link href="/schedule">
           <button className="text-polynesian-blue font-semibold px-4 py-2 rounded-md hover:bg-alice-blue transition">
             Schedules
           </button>

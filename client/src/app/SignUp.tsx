@@ -4,7 +4,7 @@ import { Heading, Grid, Flex, Link, Button, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import Divider from "./components/Divider";
 import Input from "./components/Input";
-import logo from "./public/image.png";
+import logo from "./public/1.svg";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { signUp } from "./service/auth";
@@ -134,42 +134,6 @@ export default function Signup() {
               Log In
             </Link>
           </Text>
-
-          <Divider
-            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
-          />
-
-          <Flex alignItems="center">
-            <Text fontSize="sm" color="brand.polynesian-blue">
-              Or sign up with
-            </Text>
-            <Button
-              height="50px"
-              flex="1"
-              backgroundColor="brand.polynesian-blue"
-              color="brand.alice-blue"
-              marginLeft={6}
-              borderRadius="sm"
-              _hover={{
-                backgroundColor: "brand.bright-pink-crayola",
-                color: "white",
-              }}
-            >
-              GOOGLE
-            </Button>
-          </Flex>
-        </Flex>
-
-        <Flex gridArea="logo" flexDir="column" alignItems="flex-end">
-          <img src={logo.src} alt="Piffy" width={210} />
-          <Heading
-            size="2xl"
-            lineHeight="shorter"
-            marginTop={16}
-            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
-          >
-            Sign up to the <br /> platform
-          </Heading>
         </Flex>
       </Grid>
     </motion.div>

@@ -7,10 +7,13 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "../contexts/AuthContext";
 import { db } from "../firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import { json } from "stream/consumers";
 
 export default function Quiz() {
   const [responses, setResponses] = useState<any[] | null>(null);
   const [isRetake, setIsRetake] = useState(false);
+  const [major, setMajor] = useState("");
+  const [minor, setMinor] = useState("");
   const { user } = useAuth();
   const router = useRouter();
 
@@ -42,6 +45,8 @@ export default function Quiz() {
         const data = docSnap.data();
         const previousResponses = labels.map((label) => data[label] || []);
         setResponses(previousResponses);
+        setMajor(JSON.parse(data.suggested_major_minor)["Major"] || "");
+        setMinor(JSON.parse(data.suggested_major_minor)["Minor"] || "");
       }
     };
 
@@ -74,13 +79,24 @@ export default function Quiz() {
   };
 
   const retakeQuiz = () => {
-    setResponses(Array(questions.length).fill([]));
-    setIsRetake(true);
+    router.push("/quiz");
   };
 
   return (
     <div className="flex flex-col min-h-screen bg-polynesian-blue text-alice-blue p-8">
       <div className="relative w-full max-w-4xl mx-auto p-6 bg-gradient-to-b from-white/80 to-white/80 text-polynesian-blue rounded-xl shadow-lg">
+        {/* Suggested Major and Minor */}
+        {major && (
+          <div className="text-center mb-6 text-lg font-semibold">
+            Major: {major}
+          </div>
+        )}
+        {minor && (
+          <div className="text-center mb-6 text-lg font-semibold">
+            Minor: {minor}
+          </div>
+        )}
+
         <div className="text-center mb-4 text-xl font-semibold">
           Quiz Responses
         </div>
