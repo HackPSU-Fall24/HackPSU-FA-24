@@ -111,8 +111,7 @@ export default function ScheduleTable() {
       )}`
     );
     const client = new OpenAI({
-      apiKey:
-        "sk-8Le14Fc1yiLKp5_bQIH6rNxc9GEn6tzH6S1aExgH6IT3BlbkFJA4gEln9XSpGiWVcO6-MR5Vl1970oyQBHk-GQ_c1OAA",
+      apiKey: process.env.OPENAI_API_KEY,
       dangerouslyAllowBrowser: true,
     });
 

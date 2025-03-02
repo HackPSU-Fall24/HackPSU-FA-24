@@ -11,6 +11,9 @@ import { doc, setDoc } from "firebase/firestore";
 import majorsData from "../public/psu_majors.json";
 import minorData from "../public/psu_minors.json";
 import OpenAI from "openai";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -107,8 +110,7 @@ export default function Quiz() {
 
       // Fetch suggestion directly from OpenAI
       const client = new OpenAI({
-        apiKey:
-          "sk-8Le14Fc1yiLKp5_bQIH6rNxc9GEn6tzH6S1aExgH6IT3BlbkFJA4gEln9XSpGiWVcO6-MR5Vl1970oyQBHk-GQ_c1OAA",
+        apiKey: process.env.OPENAI_API_KEY,
         dangerouslyAllowBrowser: true,
       });
 
