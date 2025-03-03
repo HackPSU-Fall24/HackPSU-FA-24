@@ -1,157 +1,238 @@
 "use client";
 
-import { Heading, Grid, Flex, Link, Button, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import { Box, Flex, Heading, Link, Button, Text, VStack, InputGroup, Input, InputRightElement } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import Divider from "./components/Divider";
-import Input from "./components/Input";
-import logo from "./public/1.svg";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { signUp } from "./service/auth";
+import { signUp } from "@/app/service/auth"; // ✅ Fixed import
+import Image from "next/image";
+import logo from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/1.svg"; // ✅ Fixed image import
+import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 export default function Signup() {
   const router = useRouter();
-  const [isInverted, setIsInverted] = useState(false);
-  const [name, setName] = useState("");
+  const [name, setName]= useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  useEffect(() => {
-    // Trigger the color inversion transition
-    setIsInverted(true);
-  }, []);
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   const handleSignup = async () => {
+    setErrors({ name: "", email: "", password: "", confirmPassword: "" });
+  
+    let isValid = true;
+
+    if (!name.trim()){
+      setErrors((prev) => ({ ...prev, name: "Full name is required" }));
+      isValid = false;
+    }
+  
+    if (!email.trim()) {
+      setErrors((prev) => ({ ...prev, email: "Email is required" }));
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setErrors((prev) => ({ ...prev, email: "Please enter a valid email address" }));
+      isValid = false;
+    }
+  
+    if (!password.trim()) {
+      setErrors((prev) => ({ ...prev, password: "Password is required" }));
+      isValid = false;
+    } else if (password.length < 6) {
+      setErrors((prev) => ({ ...prev, password: "Password must be at least 6 characters" }));
+      isValid = false;
+    }
+  
+    if (password !== confirmPassword) {
+      setErrors((prev) => ({ ...prev, confirmPassword: "Passwords do not match" }));
+      isValid = false;
+    }
+  
+    if (!isValid) return;
+  
     try {
-      await signUp(email, password, name);
-      // Additional logic to save the user's name can be added here, if needed
-      router.push("/"); // Redirect to Login after signup
+      console.log("Trying to sign up with:", {name, email});
+      
+      const userCredential = await signUp(email, password,name);
+      
+      console.log("✅ Sign up successful:", userCredential);
+      
+      router.push("/");
     } catch (error) {
       console.error("Error signing up:", error);
-      // Optionally, display an error message to the user
+      setErrors((prev) => ({ ...prev, email: error.message }));
     }
   };
+  
 
   return (
-    <motion.div
-      initial={{ x: "100%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "-100%", opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Grid
-        as="main"
-        height="100vh"
-        templateColumns="1fr 480px 480px 1fr"
-        templateRows="1fr 480px 1fr"
-        templateAreas="
-        '. . . .'
-        '. form logo .'
-        '. . . .'
-      "
-        justifyContent="center"
-        alignItems="center"
-        bg={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
-        transition="background-color 0.5s ease"
-      >
-        <Flex
-          gridArea="form"
-          height="100%"
-          backgroundColor={
-            isInverted ? "brand.alice-blue" : "brand.polynesian-blue"
-          }
-          borderRadius="md"
-          flexDir="column"
-          alignItems="stretch"
-          padding={16}
-          boxShadow="md"
-          transition="background-color 0.5s ease"
-        >
-          <Input
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            backgroundColor="white"
-            color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
-            focusBorderColor="brand.alice-blue"
-            _placeholder={{ color: "gray.400" }}
-          />
-
-          <Input
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            marginTop={2}
-            backgroundColor="white"
-            color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
-            focusBorderColor="brand.alice-blue"
-            _placeholder={{ color: "gray.400" }}
-          />
-
-          <Input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            marginTop={2}
-            backgroundColor="white"
-            color={isInverted ? "brand.polynesian-blue" : "brand.alice-blue"}
-            focusBorderColor="brand.alice-blue"
-            _placeholder={{ color: "gray.400" }}
-          />
-
-          <Button
-            backgroundColor="brand.polynesian-blue"
-            color="brand.alice-blue"
-            height="50px"
-            borderRadius="sm"
-            marginTop={6}
-            onClick={handleSignup}
-            _hover={{
-              backgroundColor: "brand.bright-pink-crayola",
-              color: "white",
-            }}
-          >
-            SIGN UP
-          </Button>
-
-          <Text
-            textAlign="center"
-            fontSize="sm"
-            color="brand.polynesian-blue"
-            marginTop={6}
-          >
-            Already have an account?{" "}
-            <Link
-              color="brand.polynesian-blue"
-              fontWeight="bold"
-              _hover={{
-                color: "brand.bright-pink-crayola",
-                textDecoration: "underline",
-              }}
-              onClick={() => router.push("/login")}
-            >
-              Log In
-            </Link>
+    <Flex minH="100vh">
+      {/* Left Section - Sign Up Form */}
+      <Box flex={1} display="flex" alignItems="center" justifyContent="center" p={8}>
+        <Box w={{ base: "100%", sm: "400px" }} bg="white" p={8} borderRadius="md">
+          {/* Heading */}
+          <Heading size="lg" fontWeight="bold" color="gray.800">
+            Create Account
+          </Heading>
+          <Text fontSize="sm" color="gray.500" mt={2}>
+            Join us to begin your academic journey
           </Text>
 
-          <Divider
-            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
-          />
-        </Flex>
+          {/* Input Fields */}
+          <VStack spacing={4} mt={6} align="stretch">
+            {/* Name Input ✅ */}
+            <Box>
+              <Input
+                placeholder="Full Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                bg="gray.100"
+                focusBorderColor="blue.500"
+                _placeholder={{ color: "gray.500" }}
+              />
+              {errors.name && <Text color="red.500" fontSize="sm" mt={1}>{errors.name}</Text>}
+            </Box>
+            
+            {/* Email Input */}
+            <Box>
+              <Input
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                bg="gray.100"
+                focusBorderColor="blue.500"
+                _placeholder={{ color: "gray.500" }}
+              />
+              {errors.email && <Text color="red.500" fontSize="sm" mt={1}>{errors.email}</Text>}
+            </Box>
 
-        <Flex gridArea="logo" flexDir="column" alignItems="flex-end">
-          <img src={logo.src} alt="Piffy" width={350} />
-          <Heading
-            size="2xl"
-            lineHeight="shorter"
-            marginTop={16}
-            color={isInverted ? "brand.alice-blue" : "brand.polynesian-blue"}
+            {/* Password Input */}
+            <Box>
+              <InputGroup>
+                <Input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  bg="gray.100"
+                  focusBorderColor="blue.500"
+                  _placeholder={{ color: "gray.500" }}
+                />
+                <InputRightElement>
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    {showPassword ? <ViewOffIcon /> : <ViewIcon />}
+                  </Button>
+                </InputRightElement>
+              </InputGroup>
+              {errors.password && <Text color="red.500" fontSize="sm" mt={1}>{errors.password}</Text>}
+            </Box>
+
+            {/* Confirm Password Input */}
+            <Box>
+              <InputGroup>
+                <Input
+                  type={showConfirmPassword ? "text" : "password"}
+                  placeholder="Confirm Password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  bg="gray.100"
+                  focusBorderColor="blue.500"
+                  _placeholder={{ color: "gray.500" }}
+                />
+                <InputRightElement>
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                  >
+                    {showConfirmPassword ? <ViewOffIcon /> : <ViewIcon />}
+                  </Button>
+                </InputRightElement>
+              </InputGroup>
+              {errors.confirmPassword && <Text color="red.500" fontSize="sm" mt={1}>{errors.confirmPassword}</Text>}
+            </Box>
+          </VStack>
+
+          {/* Signup Button */}
+          <Button
+            w="full"
+            mt={6}
+            bg="blue.900"
+            color="white"
+            size="lg"
+            onClick={handleSignup}
+            _hover={{ transform: "scale(1.05)", transition: "0.2s" }}
           >
-            Sign up to the <br /> platform
-          </Heading>
-        </Flex>
-      </Grid>
-    </motion.div>
+            Create Account
+          </Button>
+
+          {/* Divider */}
+          <Flex align="center" my={4}>
+            <Box flex={1} borderBottom="1px solid" borderColor="gray.300" />
+            <Text mx={2} color="gray.500" fontSize="sm">
+              OR
+            </Text>
+            <Box flex={1} borderBottom="1px solid" borderColor="gray.300" />
+          </Flex>
+
+          {/* Login Link */}
+          <Text fontSize="sm" color="gray.600" textAlign="center">
+            Already have an account?{" "}
+            <Link
+              color="blue.500"
+              fontWeight="bold"
+              _hover={{ textDecoration: "underline" }}
+              onClick={() => router.push("/login")}
+              cursor="pointer"
+            >
+              Sign In
+            </Link>
+          </Text>
+        </Box>
+      </Box>
+
+      {/* Right Section - Dark Blue with Logo */}
+      <Box
+        flex={1}
+        bg="blue.900"
+        color="white"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        p={8}
+      >
+        {/* Logo */}
+        <Image src={logo} alt="Course PAiLOT Logo" width={500} height={500} />
+
+        {/* Title & Description */}
+        <Heading size="xl" fontWeight="bold" mt={4}>
+          
+        </Heading>
+        <Text fontSize="23pt" mt={7} textAlign="center">
+          Navigate your academic journey with AI-powered course assistance.
+        </Text>
+
+        {/* Quote */}
+        <Text fontSize="10pt" mt={8} opacity={0.8} textAlign="center" w="80%">
+          "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
+        </Text>
+        <Text fontSize="10pt" fontWeight="bold" mt={2}>
+          — Malcolm X
+        </Text>
+      </Box>
+    </Flex>
   );
 }
