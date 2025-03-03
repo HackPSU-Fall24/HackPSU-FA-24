@@ -14,13 +14,42 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [errors, setErrors] = useState<{ email: string; password: string }>({
+    email: "",
+    password: "",
+  });
 
   const handleLogin = async () => {
+    setErrors({ email: "", password: "" }); // Reset errors
+
+    let isValid = true;
+
+    // Email Validation
+    if (!email.trim()) {
+      setErrors((prev) => ({ ...prev, email: "Email is required" }));
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setErrors((prev) => ({ ...prev, email: "Please enter a valid email" }));
+      isValid = false;
+    }
+
+    // Password Validation
+    if (!password.trim()) {
+      setErrors((prev) => ({ ...prev, password: "Password is required" }));
+      isValid = false;
+    } else if (password.length < 6) {
+      setErrors((prev) => ({ ...prev, password: "Password must be at least 6 characters" }));
+      isValid = false;
+    }
+
+    if (!isValid) return; // Prevent login if validation fails
+
     try {
       await signIn(email, password);
       router.push("/");
     } catch (error) {
       console.error("Error signing in:", error);
+      setErrors((prev) => ({ ...prev, email: "Invalid email or password" })); // Generic error message
     }
   };
 
@@ -41,9 +70,7 @@ export default function Login() {
         <Image src={logo} alt="Course PAiLOT Logo" width={500} height={500} />
 
         {/* Title & Description */}
-        <Heading size="xl" fontWeight="bold" mt={4}>
-          
-        </Heading>
+        <Heading size="xl" fontWeight="bold" mt={4}></Heading>
         <Text fontSize="23pt" mt={7} textAlign="center">
           Navigate your academic journey with AI-powered course assistance.
         </Text>
@@ -69,37 +96,40 @@ export default function Login() {
           </Text>
 
           {/* Input Fields */}
-          <VStack spacing={4} mt={6}>
-            <Input
-              placeholder="Email Address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              bg="gray.100"
-              focusBorderColor="blue.500"
-              _placeholder={{ color: "gray.500" }}
-            />
-
-            {/* Password with Eye Icon */}
-            <InputGroup>
+          <VStack spacing={4} mt={6} align="stretch">
+            {/* Email Input */}
+            <Box>
               <Input
-                type={showPassword ? "text" : "password"}
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 bg="gray.100"
                 focusBorderColor="blue.500"
                 _placeholder={{ color: "gray.500" }}
               />
-              <InputRightElement>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? <ViewOffIcon /> : <ViewIcon />}
-                </Button>
-              </InputRightElement>
-            </InputGroup>
+              {errors.email && <Text color="red.500" fontSize="sm" mt={1}>{errors.email}</Text>}
+            </Box>
+
+            {/* Password Input */}
+            <Box>
+              <InputGroup>
+                <Input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  bg="gray.100"
+                  focusBorderColor="blue.500"
+                  _placeholder={{ color: "gray.500" }}
+                />
+                <InputRightElement>
+                  <Button size="sm" variant="ghost" onClick={() => setShowPassword(!showPassword)}>
+                    {showPassword ? <ViewOffIcon /> : <ViewIcon />}
+                  </Button>
+                </InputRightElement>
+              </InputGroup>
+              {errors.password && <Text color="red.500" fontSize="sm" mt={1}>{errors.password}</Text>}
+            </Box>
           </VStack>
 
           {/* Forgot Password Link */}
@@ -138,7 +168,7 @@ export default function Login() {
               color="blue.500"
               fontWeight="bold"
               _hover={{ textDecoration: "underline" }}
-              onClick={() => router.push("/signup")} // Correct path
+              onClick={() => router.push("/signup")}
               cursor="pointer"
             >
               Create Account
