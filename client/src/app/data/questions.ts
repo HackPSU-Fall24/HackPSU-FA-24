@@ -1,7 +1,3 @@
-// src/app/data/questions.ts
-
-import { option } from "framer-motion/client";
-
 export interface Question {
   title: string;
   options?: string[];
@@ -12,76 +8,56 @@ export interface Question {
 const questions: Question[] = [
   {
     title: "What subjects did you enjoy the most in high school? (Select all that apply)",
-    options: ["Mathematics", "Physics", "Chemistry", "Biology", "Computer Science", "Other"],
+    options: ["Mathematics", "Science", "History", "Literature", "Art", "Music", "Physical Education", "Other"],
     type: "multi-select",
     required: true,
   },
   {
     title: "What subjects did you struggle with the most in high school? (Select all that apply)",
-    options: ["Mathematics", "Physics", "Chemistry", "Computer Science", "Other"],
+    options: ["Mathematics", "Science", "History", "Literature", "Art", "Music", "Physical Education", "Other"],
     type: "multi-select",
     required: true,
   },
   {
-    title: "Which engineering fields are you most interested in? (Select up to three)",
-    options: ["Mechanical Engineering", "Civil Engineering", "Electrical Engineering", "Computer Engineering", "Chemical Engineering", "Biomedical Engineering", "Aerospace Engineering", "Industrial Engineering", "Environmental Engineering", "Undecided"],
+    title: "Which of the following areas are you most interested in? (Select up to three)",
+    options: ["Technology and Engineering", "Business and Entrepreneurship", "Health and Medicine", "Social Sciences and Humanities", "Arts and Design", "Education and Teaching", "Environment and Sustainability", "Undecided"],
     type: "multi-select",
     required: true,
   },
   {
-    title: "Have you participated in any projects or extracurricular activities related to engineering?",
+    title: "Have you participated in any projects, clubs, or extracurricular activities related to your interests?",
     type: "text",
   },
   {
-    title: "On a scale of 1-5, how comfortable are you with Calculus?",
+    title: "On a scale of 1-5, how comfortable are you with analytical and problem-solving tasks?",
     type: "scale",
   },
   {
-    title: "On a scale of 1-5, how comfortable are you with Linear Algebra?",
+    title: "On a scale of 1-5, how comfortable are you with creative and innovative tasks?",
     type: "scale",
   },
   {
-    title: "Which programming languages are you familiar with? (Select all that apply)",
-    options: ["C/C++", "Python", "Java", "MATLAB", "R", "JavaScript", "None"],
+    title: "Which skills would you like to develop further during your college years? (Select all that apply)",
+    options: ["Leadership", "Communication", "Technical Skills", "Critical Thinking", "Creativity", "Other"],
     type: "multi-select",
   },
   {
-    title: "Are you interested in learning more about programming and software development in your engineering career?",
-    options: ["Yes", "No", "Maybe"],
-    type: "single-select"
-  },
-  {
-    title: "What is your long-term career goal in engineering? (Select all that apply)",
-    options: ["Work in industry", "Work in academia or research", "Start my own business (entrepreneurship)", "Government/Policy", "Unsure"],
+    title: "What is your long-term career goal? (Select all that apply)",
+    options: ["Work in a corporate setting", "Start my own business", "Pursue research or academia", "Work in a creative field", "Contribute to social causes", "Unsure"],
     type: "multi-select",
   },
   {
-    title: "Which industries or sectors interest you the most? (Select up to three)",
-    options: [ "Aerospace", "Automotive", "Biotechnology", "Energy", "Environmental", "Information Technology", "Manufacturing", "Robotics/AI", "Telecommunications", "Other (Please specify)"],
-    type: "multi-select"
-  },
-  {
-    title: "Are you interested in joining engineering clubs, competitions, or research groups?",
-    options: ["Yes", "No", "Maybe"],
-    type: "single-select",
-  },
-  {
-    title: "How many hours per week do you dedicate to studying outside of class?",
+    title: "How many hours per week are you willing to dedicate to extracurricular activities or internships related to your major?",
     options: ["0-5 hours", "5-10 hours", "10-15 hours", "15+ hours"],
     type: "single-select",
   },
   {
-    title: "What kind of elective courses would you like to explore outside of core engineering subjects? (Select all that apply)",
-    options: ["Business and Management", "Design and Innovation", "Data Science and AI", "Environmental Studies", "Humanities and Social Sciences", "Other"],
-    type: "multi-select",
-  },
-  {
-    title: "Are you open to pursuing minors or certificates along with your engineering degree",
+    title: "Are you open to pursuing a minor to complement your major?",
     options: ["Yes", "No", "Maybe"],
     type: "single-select"
   },
   {
-    title: "What types of minors or certificates are you interested in pursuing? (e.g., Business, Computer Science, Mathematics, etc.)",
+    title: "What types of minors are you interested in pursuing? (e.g., Business, Computer Science, Mathematics, etc.)",
     type: "text"
   }
 ];

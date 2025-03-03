@@ -77,18 +77,14 @@ export default function Quiz() {
     const labels = [
       "enjoyed_subjects",
       "struggled_subjects",
-      "engineering_interests",
-      "engineering_projects",
-      "math_comfort_level_Calculus",
-      "math_comfort_level_Linear_Algebra",
-      "programming_languages",
-      "programming_interest",
+      "interests",
+      "projects_activities",
+      "analytical_comfort",
+      "creative_comfort",
+      "skills_to_develop",
       "career_goals",
-      "industry_interest",
-      "extracurricular_interest",
-      "study_hours_per_week",
-      "elective_interests",
-      "minor_interests",
+      "extracurricular_hours",
+      "minor_interest",
       "minor_pursuing",
     ];
 
@@ -101,14 +97,12 @@ export default function Quiz() {
       });
 
       // Extract minor-related data
-      // When accessing minors
       const majorTitles = Object.keys(majorsData);
       const minorTitles = Object.keys(minorData);
 
       // Fetch suggestion directly from OpenAI
       const client = new OpenAI({
-        apiKey:
-          "sk-8Le14Fc1yiLKp5_bQIH6rNxc9GEn6tzH6S1aExgH6IT3BlbkFJA4gEln9XSpGiWVcO6-MR5Vl1970oyQBHk-GQ_c1OAA",
+        apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
         dangerouslyAllowBrowser: true,
       });
 
