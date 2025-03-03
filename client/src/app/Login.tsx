@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Box, Flex, Heading, Link, Button, Text, VStack, InputGroup, Input, InputRightElement } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { signIn } from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/client/src/app/service/auth.ts"; // Adjust import if needed
+import { signIn } from "./service/auth.ts"; // Adjust import if needed
 import Image from "next/image";
-import logo from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/1.svg"; // Adjust if needed
+import logo from "./public/1.svg"; // Adjust if needed
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 export default function Login() {

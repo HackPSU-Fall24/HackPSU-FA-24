@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Box, Flex, Heading, Link, Button, Text, VStack, InputGroup, Input, InputRightElement } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { signUp } from "@/app/service/auth"; // ✅ Fixed import
+import { signUp } from "./service/auth"; // ✅ Fixed import
 import Image from "next/image";
-import logo from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/1.svg"; // ✅ Fixed image import
+import logo from "./public/1.svg"; // ✅ Fixed image import
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 export default function Signup() {
