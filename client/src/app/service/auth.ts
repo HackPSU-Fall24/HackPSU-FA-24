@@ -18,6 +18,7 @@ export const signUp = async (email: string, password: string, name: string) => {
     // Save user data to Firestore
     await setDoc(doc(db, "Users", user.uid), {
       uid: user.uid,
+      name,
       email,
       createdAt: new Date(),
       quiz_status: false

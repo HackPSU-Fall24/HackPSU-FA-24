@@ -11,6 +11,7 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 export default function Signup() {
   const router = useRouter();
+  const [name, setName]= useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -18,15 +19,21 @@ export default function Signup() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const [errors, setErrors] = useState({
+    name: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
 
   const handleSignup = async () => {
-    setErrors({ email: "", password: "", confirmPassword: "" });
+    setErrors({ name: "", email: "", password: "", confirmPassword: "" });
   
     let isValid = true;
+
+    if (!name.trim()){
+      setErrors((prev) => ({ ...prev, name: "Full name is required" }));
+      isValid = false;
+    }
   
     if (!email.trim()) {
       setErrors((prev) => ({ ...prev, email: "Email is required" }));
@@ -52,9 +59,9 @@ export default function Signup() {
     if (!isValid) return;
   
     try {
-      console.log("Trying to sign up with:", email);
+      console.log("Trying to sign up with:", {name, email});
       
-      const userCredential = await signUp(email, password);
+      const userCredential = await signUp(email, password,name);
       
       console.log("✅ Sign up successful:", userCredential);
       
@@ -81,6 +88,19 @@ export default function Signup() {
 
           {/* Input Fields */}
           <VStack spacing={4} mt={6} align="stretch">
+            {/* Name Input ✅ */}
+            <Box>
+              <Input
+                placeholder="Full Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                bg="gray.100"
+                focusBorderColor="blue.500"
+                _placeholder={{ color: "gray.500" }}
+              />
+              {errors.name && <Text color="red.500" fontSize="sm" mt={1}>{errors.name}</Text>}
+            </Box>
+            
             {/* Email Input */}
             <Box>
               <Input
@@ -195,21 +215,21 @@ export default function Signup() {
         p={8}
       >
         {/* Logo */}
-        <Image src={logo} alt="Course PAiLOT Logo" width={80} height={80} />
+        <Image src={logo} alt="Course PAiLOT Logo" width={500} height={500} />
 
         {/* Title & Description */}
         <Heading size="xl" fontWeight="bold" mt={4}>
-          Course PAilot
+          
         </Heading>
-        <Text fontSize="md" mt={2} textAlign="center">
+        <Text fontSize="23pt" mt={7} textAlign="center">
           Navigate your academic journey with AI-powered course assistance.
         </Text>
 
         {/* Quote */}
-        <Text fontSize="sm" mt={8} opacity={0.8} textAlign="center" w="80%">
+        <Text fontSize="10pt" mt={8} opacity={0.8} textAlign="center" w="80%">
           "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
         </Text>
-        <Text fontSize="sm" fontWeight="bold" mt={2}>
+        <Text fontSize="10pt" fontWeight="bold" mt={2}>
           — Malcolm X
         </Text>
       </Box>

@@ -38,21 +38,21 @@ export default function Login() {
         p={8}
       >
         {/* Logo */}
-        <Image src={logo} alt="Course PAiLOT Logo" width={80} height={80} />
+        <Image src={logo} alt="Course PAiLOT Logo" width={500} height={500} />
 
         {/* Title & Description */}
         <Heading size="xl" fontWeight="bold" mt={4}>
-          Course PAilot
+          
         </Heading>
-        <Text fontSize="md" mt={2} textAlign="center">
+        <Text fontSize="23pt" mt={7} textAlign="center">
           Navigate your academic journey with AI-powered course assistance.
         </Text>
 
         {/* Quote */}
-        <Text fontSize="sm" mt={8} opacity={0.8} textAlign="center" w="80%">
+        <Text fontSize="10pt" mt={8} opacity={0.8} textAlign="center" w="80%">
           "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
         </Text>
-        <Text fontSize="sm" fontWeight="bold" mt={2}>
+        <Text fontSize="10pt" fontWeight="bold" mt={2}>
           — Malcolm X
         </Text>
       </Box>
