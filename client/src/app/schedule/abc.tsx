@@ -167,7 +167,7 @@ export default function ScheduleTable() {
       </div>
 
       {/* Header Section */}
-      <header className="relative z-10 py-20 text-center mt-28">
+      <header className="relative z-10 py-20 text-center">
         <h1 className="text-5xl font-extrabold mb-4 animate-bounce">
           Course Schedule Generator
         </h1>

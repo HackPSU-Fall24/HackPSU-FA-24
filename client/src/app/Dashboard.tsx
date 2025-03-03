@@ -54,9 +54,9 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* Hero Section */}
-        <header className="relative z-10 py-32 text-center">
+        <header className="relative z-10 py-40 text-center">
           <h1 className="text-5xl font-extrabold mb-4 animate-bounce">
-            Welcome to Your Dashboard
+            Welcome to Your Future
           </h1>
           <p className="text-2xl mb-8">
             Unleash your potential with a customized experience.

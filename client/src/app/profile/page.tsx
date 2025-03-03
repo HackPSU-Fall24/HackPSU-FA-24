@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { db } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
-import NavBar from "../components/NavBar";
+import Navbar from "../components/Navbar"; // ✅ Use the correct Navbar
 import ThemeContainer from "../contexts/theme/ThemeContainer";
 
 function ProfileContent() {
@@ -59,23 +59,30 @@ function ProfileContent() {
 
   return (
     <>
-      <NavBar />
+      {/* ✅ Use fixed Navbar */}
+      <Navbar />
 
-      {/* Container with top padding in case NavBar is fixed */}
-      <div className="pt-[80px] min-h-screen bg-white">
-        {/* Straight pink banner */}
-        <div className="w-full h-32 bg-pink-600 flex items-center justify-center">
-          <h2 className="text-white text-3xl font-bold">Your Profile</h2>
-        </div>
-
-        {/* Two-column layout */}
-        <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left: Bigger rectangle image holder + Upload button */}
-          <div className="flex flex-col items-center justify-center">
-            <div className="w-64 h-48 bg-gray-200 flex items-center justify-center mb-4">
-              {/* Replace with <img> if you have an actual image */}
+      {/* Profile Page Container */}
+      <div className="pt-28 min-h-screen bg-gradient-to-br from-polynesian-blue via-celestial-blue to-bright-pink-crayola text-white">
+        
+        {/* Profile Banner */}
+        {/* Profile Header - Matches "Generate Schedule" UI */}
+        <header className="relative z-10 py-20 text-center mt-15">
+          <h1 className="text-5xl font-extrabold mb-4 animate-bounce">
+            Your Profile
+          </h1>
+          <p className="text-2xl mb-2">
+            View and manage your academic details.
+          </p>
+        </header>
+        {/* Profile Content Section */}
+        <div className="max-w-5xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          {/* Left: Profile Picture & Upload Button */}
+          <div className="flex flex-col items-center">
+            <div className="w-48 h-48 rounded-full bg-gray-300 flex items-center justify-center shadow-md mb-4">
               <svg
-                className="w-12 h-12 text-gray-400"
+                className="w-16 h-16 text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -87,25 +94,42 @@ function ProfileContent() {
               </svg>
             </div>
             <button
-              className="bg-gray-300 py-2 px-4 rounded hover:bg-gray-400 transition"
+              className="bg-white text-gray-700 py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition"
               onClick={() => alert("Upload profile picture logic goes here.")}
             >
               Upload Picture
             </button>
           </div>
 
-          {/* Right: Larger Name, Major, Minor */}
-          <div className="flex flex-col justify-center text-gray-800">
-            <p className="mb-6 text-2xl">
-              <strong>Name:</strong> {name || "N/A"}
-            </p>
-            <p className="mb-6 text-2xl">
-              <strong>Major:</strong> {major || "Not specified"}
-            </p>
-            <p className="mb-6 text-2xl">
-              <strong>Minor:</strong> {minor || "Not specified"}
+          {/* Right: User Details */}
+          {/* Right: User Details + Retake Quiz Button */}
+          <div className="flex flex-col justify-center bg-white p-6 rounded-lg shadow-lg text-gray-800 space-y-2">
+          <div className="border-b pb-1">
+            <p className="text-xl font-semibold">
+              <span className="text-gray-500">Name:</span> <span className="text-black">{name || "N/A"}</span>
             </p>
           </div>
+          <div className="border-b pb-1">
+            <p className="text-xl font-semibold">
+              <span className="text-gray-500">Major:</span> <span className="text-black">{major || "Not specified"}</span>
+            </p>
+          </div>
+          <div>
+            <p className="text-xl font-semibold">
+              <span className="text-gray-500">Minor:</span> <span className="text-black">{minor || "Not specified"}</span>
+            </p>
+          </div>
+
+          {/* Retake Quiz Button - Reduced Space Above */}
+          <button
+            onClick={() => router.push("/quiz")}
+            className="mt-4 self-center px-4 py-2 text-sm bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition-all"
+          >
+            Retake Quiz
+          </button>
+        </div>
+
+
         </div>
       </div>
     </>
