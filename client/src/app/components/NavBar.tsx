@@ -24,7 +24,9 @@ const Navbar: React.FC = () => {
           className="text-polynesian-blue font-semibold text-xl"
           style={{ fontFamily: "Marcellus, sans-serif" }}
         >
+          <Link href="/">
           COURSE P<span className="text-bright-pink-crayola">AI</span>LOT
+          </Link>
         </span>
       </div>
 
