@@ -1,143 +1,151 @@
 "use client";
 
 import { useState } from "react";
-import { Heading, Grid, Flex, Link, Button, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Button, Text, VStack, InputGroup, Input, InputRightElement } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import Divider from "./components/Divider";
-import Input from "./components/Input";
-import logo from "./public/2.svg";
 import { motion } from "framer-motion";
-import { signIn } from "./service/auth";
+import { signIn } from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/client/src/app/service/auth.ts"; // Adjust import if needed
+import Image from "next/image";
+import logo from "/Users/ishitasinha/Documents/GitHub/HackPSU-FA-24/1.svg"; // Adjust if needed
+import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 export default function Login() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async () => {
     try {
       await signIn(email, password);
-      router.push("/"); // Redirect to dashboard after successful login
+      router.push("/");
     } catch (error) {
       console.error("Error signing in:", error);
     }
   };
 
-  const handleRegister = () => {
-    router.push("/signup");
-  };
-
   return (
-    <motion.div
-      initial={{ x: "100%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "-100%", opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Grid
-        as="main"
-        height="100vh"
-        templateColumns="1fr 480px 480px 1fr"
-        templateRows="1fr 480px 1fr"
-        templateAreas="
-        '. . . .'
-        '. logo form .'
-        '. . . .'
-      "
+    <Flex minH="100vh">
+      {/* Left Section - Dark Blue */}
+      <Box
+        flex={1}
+        bg="blue.900"
+        color="white"
+        display="flex"
+        flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        bg="brand.alice-blue"
+        p={8}
       >
-        <Flex gridArea="logo" flexDir="column" alignItems="flex-start">
-          <img src={logo.src} alt="Piffy" width={350} />
+        {/* Logo */}
+        <Image src={logo} alt="Course PAiLOT Logo" width={80} height={80} />
 
-          <Heading
-            size="2xl"
-            lineHeight="shorter"
-            marginTop={16}
-            color="brand.polynesian-blue"
-          >
-            Log in to the <br /> platform
+        {/* Title & Description */}
+        <Heading size="xl" fontWeight="bold" mt={4}>
+          Course PAilot
+        </Heading>
+        <Text fontSize="md" mt={2} textAlign="center">
+          Navigate your academic journey with AI-powered course assistance.
+        </Text>
+
+        {/* Quote */}
+        <Text fontSize="sm" mt={8} opacity={0.8} textAlign="center" w="80%">
+          "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
+        </Text>
+        <Text fontSize="sm" fontWeight="bold" mt={2}>
+          — Malcolm X
+        </Text>
+      </Box>
+
+      {/* Right Section - Login Form */}
+      <Box flex={1} display="flex" alignItems="center" justifyContent="center" p={8}>
+        <Box w={{ base: "100%", sm: "400px" }} bg="white" p={8} borderRadius="md">
+          {/* Heading */}
+          <Heading size="lg" fontWeight="bold" color="gray.800">
+            Welcome Back
           </Heading>
-        </Flex>
+          <Text fontSize="sm" color="gray.500" mt={2}>
+            Please sign in to continue
+          </Text>
 
-        <Flex
-          gridArea="form"
-          height="100%"
-          backgroundColor="brand.polynesian-blue"
-          borderRadius="md"
-          flexDir="column"
-          alignItems="stretch"
-          padding={16}
-          boxShadow="md"
-        >
-          <Input
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            backgroundColor="white"
-            color="brand.polynesian-blue"
-            focusBorderColor="brand.alice-blue"
-            _placeholder={{ color: "gray.400" }}
-          />
+          {/* Input Fields */}
+          <VStack spacing={4} mt={6}>
+            <Input
+              placeholder="Email Address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              bg="gray.100"
+              focusBorderColor="blue.500"
+              _placeholder={{ color: "gray.500" }}
+            />
 
-          <Input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            marginTop={2}
-            backgroundColor="white"
-            color="brand.polynesian-blue"
-            focusBorderColor="brand.alice-blue"
-            _placeholder={{ color: "gray.400" }}
-          />
+            {/* Password with Eye Icon */}
+            <InputGroup>
+              <Input
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                bg="gray.100"
+                focusBorderColor="blue.500"
+                _placeholder={{ color: "gray.500" }}
+              />
+              <InputRightElement>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <ViewOffIcon /> : <ViewIcon />}
+                </Button>
+              </InputRightElement>
+            </InputGroup>
+          </VStack>
 
-          <Link
-            alignSelf="flex-start"
-            marginTop={2}
-            fontSize="sm"
-            color="brand.alice-blue"
-            fontWeight="bold"
-            _hover={{
-              color: "brand.bright-pink-crayola",
-              textDecoration: "underline",
-            }}
-          >
-            I forgot my password
-          </Link>
+          {/* Forgot Password Link */}
+          <Flex justify="flex-end" mt={2}>
+            <Link fontSize="sm" color="blue.500" fontWeight="medium" _hover={{ textDecoration: "underline" }}>
+              Forgot password?
+            </Link>
+          </Flex>
 
+          {/* Login Button */}
           <Button
-            backgroundColor="brand.alice-blue"
-            color="brand.polynesian-blue"
-            height="50px"
-            borderRadius="sm"
-            marginTop={6}
+            w="full"
+            mt={6}
+            bg="blue.900"
+            color="white"
+            size="lg"
             onClick={handleLogin}
-            _hover={{
-              backgroundColor: "brand.bright-pink-crayola",
-              color: "white",
-            }}
+            _hover={{ transform: "scale(1.05)", transition: "0.2s" }}
           >
-            LOGIN
+            Sign In
           </Button>
 
-          <Text textAlign="center" fontSize="sm" color="white" marginTop={6}>
+          {/* Divider */}
+          <Flex align="center" my={4}>
+            <Box flex={1} borderBottom="1px solid" borderColor="gray.300" />
+            <Text mx={2} color="gray.500" fontSize="sm">
+              OR
+            </Text>
+            <Box flex={1} borderBottom="1px solid" borderColor="gray.300" />
+          </Flex>
+
+          {/* Register Link */}
+          <Text fontSize="sm" color="gray.600" textAlign="center">
             Don't have an account?{" "}
             <Link
-              color="brand.alice-blue"
-              onClick={handleRegister}
+              color="blue.500"
               fontWeight="bold"
-              _hover={{
-                color: "brand.bright-pink-crayola",
-                textDecoration: "underline",
-              }}
+              _hover={{ textDecoration: "underline" }}
+              onClick={() => router.push("/signup")} // Correct path
+              cursor="pointer"
             >
-              Register
+              Create Account
             </Link>
           </Text>
-        </Flex>
-      </Grid>
-    </motion.div>
+        </Box>
+      </Box>
+    </Flex>
   );
 }
