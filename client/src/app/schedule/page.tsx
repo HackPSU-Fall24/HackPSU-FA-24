@@ -50,23 +50,22 @@ export default function ScheduleTable() {
   const [minor, setMinor] = useState("");
   const { user } = useAuth();
   const router = useRouter();
-  const [schedules, setSchedules] = useState<Schedule[]>([]);
+  const [schedules, setSchedules] = useState<Record<
+    string,
+    SemesterSchedule
+  > | null>(null);
 
   const labels = [
     "enjoyed_subjects",
     "struggled_subjects",
-    "engineering_interests",
-    "engineering_projects",
-    "math_comfort_level_Calculus",
-    "math_comfort_level_Linear_Algebra",
-    "programming_languages",
-    "programming_interest",
+    "interests",
+    "projects_activities",
+    "analytical_comfort",
+    "creative_comfort",
+    "skills_to_develop",
     "career_goals",
-    "industry_interest",
-    "extracurricular_interest",
-    "study_hours_per_week",
-    "elective_interests",
-    "minor_interests",
+    "extracurricular_hours",
+    "minor_interest",
     "minor_pursuing",
   ];
 
@@ -88,7 +87,11 @@ export default function ScheduleTable() {
   }, [user]);
 
   if (!responses) {
-    return <div>Loading...</div>; // Show a loading state until responses are fetched
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-100 to-blue-100">
+        <div className="text-2xl text-blue-900">Loading...</div>
+      </div>
+    );
   }
 
   const majorsInfo = majorsData as { [key: string]: any };
@@ -99,7 +102,7 @@ export default function ScheduleTable() {
   }));
 
   const navigateToDashboard = () => {
-    router.push("/"); // Adjust the path according to your dashboard route
+    router.push("/");
   };
 
   const handleClick = async () => {
@@ -111,7 +114,7 @@ export default function ScheduleTable() {
       )}`
     );
     const client = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
       dangerouslyAllowBrowser: true,
     });
 
@@ -120,33 +123,43 @@ export default function ScheduleTable() {
       messages: [
         {
           role: "system",
-          content: `I need to create course schedules for an engineering student based on their interests and strengths in high school subjects, comfort level in calculus and linear algebra, preferred engineering fields, programming knowledge, and career goals. Please use the following data to generate at least three possible schedules for the whole 8 semesters in a JSON format with the structure { "semester 1": [], "semester 2": [], ... }. Ensure these schedules include general education (GenEd) courses number and description from Penn State and adhere to the entrance and degree requirements for the specified major and minor. Understand the program requirements and core requirements accurately. Keep in mind about the pre requisites of the courses given in the description.
-    
-    Here are the data points to consider:
-    
-    Interests and Struggles in High School Subjects: Identify any potential prerequisites needed based on subjects they struggled with.
-    Engineering Interests: Tailor the core engineering courses towards fields like Mechanical, Civil, Electrical, etc.
-    Comfort with Calculus and Linear Algebra: Adjust the course load and sequence accordingly, offering remedial courses if needed.
-    Programming Knowledge: Include introductory or advanced programming courses, depending on their familiarity.
-    Career Goals and Industry Interests: Choose electives and supporting courses that align with long-term goals (e.g., business electives for aspiring entrepreneurs).
-    Interest in Extracurriculars: Suggest club participation and research opportunities as extracurricular activities that align with their fields of interest.
-    Additional Data:
-    
-    Utilize the provided JSON structure to extract program descriptions, entrance requirements, and degree requirements, and include electives related to the major and minor.
-    For each schedule, ensure to include general education courses in areas like Humanities, Social Sciences, Arts, Natural Sciences, etc., following Penn State’s GenEd requirements.
-    Generate three schedules that are balanced and feasible and in perfect jsonf ormat to be used later on, offering various pathways for an engineering student.
-    
-    Format:
-    Keep in mind i DO NOT WANT any text only this dictionary
+          content: `I need to create course schedules for an engineering student based on their interests and strengths in high school subjects, comfort level in calculus and linear algebra, preferred engineering fields, programming knowledge, and career goals. Please use the following data to generate at least three possible schedules for the whole 8 semesters in a JSON format with the structure { "semester 1": [], "semester 2": [], ... }. Ensure these schedules include general education (GenEd) courses (number and description) from Penn State and adhere to the entrance and degree requirements for any specified major and minor (e.g., Mechanical Engineering major with a Business minor, Electrical Engineering major with a Computer Science minor, etc.). Understand the program requirements and core requirements accurately, ensuring prerequisites are properly accounted for.
+          
+          Here are the data points to consider:
+          1) enjoyed_subjects & struggled_subjects - Identify relevant majors/minors (from enjoyed subjects) and potential prerequisites or remedial courses (from struggled subjects).
+          2) interests - Match broader field preferences (e.g., Technology/Engineering, Business, Health, Arts) to core courses and specialized electives.
+          3) projects_activities - Leverage prior club or project experiences to suggest advanced/specialized courses or research/internship opportunities.
+          4) analytical_comfort & creative_comfort - Adjust curriculum rigor and focus based on comfort with analytical or creative tasks.
+          5) skills_to_develop - Incorporate courses/extracurriculars fostering leadership, communication, technical skills, creativity, and targeted proficiencies.
+          6) career_goals - Select electives/internships supporting career trajectories.
+          7) extracurricular_hours - Propose clubs, volunteering, or research roles aligned with available time.
+          8) minor_interest & minor_pursuing - Include required and elective courses for the chosen minor, ensuring prerequisites.
+          
+          Additional Data:
+          - Utilize the JSON structure to extract program descriptions, entrance requirements, and degree requirements, and include electives for each major and minor.
+          - For each schedule, include general education courses (course numbers and descriptions) per Penn State's GenEd requirements.
 
-    {"Schedule 1":
-        {"semester 1": 
-            [Courses], {"semester 2": [Courses]},
-        },
-     "Schedule 2": ...
-    }
-
-    `,
+          Must include the following details:
+          - Course number and description for each course, elective and gened
+          - Keep in mind the student's career goals and extracurricular hours
+          - Keep in mind the student's major and minor course requirements and pre requisites
+          - Along with gened and electives mention which requirement it fulfils (eg. COMM 100 for GA)
+          
+          Generate three balanced and feasible schedules (for all 8 semesters each) in perfect JSON format with the structure:
+          {
+            "Schedule 1": {
+              "semester 1": ["Courses"],
+              "semester 2": ["Courses"],
+              ...
+            },
+            "Schedule 2": {
+              "semester 1": [...],
+              "semester 2": [...],
+              ...
+            },
+            "Schedule 3": {...}
+          }
+          Ensure prerequisites are met and course selections align with both the major and minor requirements, reflecting the student's interests, strengths, and career objectives.`,
         },
         {
           role: "user",
@@ -175,55 +188,68 @@ export default function ScheduleTable() {
   };
 
   return (
-    <div className="bg-alice-blue min-h-screen p-4 relative">
-      <button
-        onClick={navigateToDashboard}
-        className="absolute top-4 right-4 px-4 py-2 bg-polynesian-blue text-alice-blue rounded hover:bg-celestial-blue"
-      >
-        Home
-      </button>
-      <button
-        onClick={handleClick}
-        className="px-4 py-2 bg-bright-pink-crayola text-alice-blue rounded hover:bg-celestial-blue"
-      >
-        Generate Schedule
-      </button>
+    <div className="min-h-screen bg-gradient-to-br from-white to-gray-100 p-6">
+      <header className="mb-8 text-center">
+        <h1 className="text-4xl font-bold text-gray-800">
+          Course Schedule Generator
+        </h1>
+        <p className="text-lg text-gray-600 mt-2">
+          Get personalized course schedules tailored to your interests and
+          goals.
+        </p>
+      </header>
+      <div className="flex justify-center mb-6 space-x-4">
+        <button
+          onClick={navigateToDashboard}
+          className="px-6 py-3 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition-all"
+        >
+          Home
+        </button>
+        <button
+          onClick={handleClick}
+          className="px-6 py-3 bg-green-600 text-white rounded shadow hover:bg-green-700 transition-all"
+        >
+          Generate Schedule
+        </button>
+      </div>
       {schedules && (
-        <div>
-          {Object.entries(schedules).map(([Schedule, semesterData]) => (
-            <div key={Schedule} className="mt-8">
-              <h2 className="text-polynesian-blue font-bold text-3xl mb-4 text-center">
-                {Schedule}
+        <div className="space-y-12">
+          {Object.entries(schedules).map(([scheduleTitle, semesterData]) => (
+            <div
+              key={scheduleTitle}
+              className="bg-white rounded-lg shadow-lg p-6"
+            >
+              <h2 className="text-3xl font-semibold text-center text-blue-600 mb-4">
+                {scheduleTitle}
               </h2>
-
-              <table className="w-full border-collapse mb-6">
-                <thead className="bg-white">
+              <table className="min-w-full border-collapse">
+                <thead>
                   <tr>
-                    <th className="border px-4 py-2 bg-polynesian-blue text-white">
+                    <th className="border px-4 py-2 bg-blue-600 text-white">
                       Semester
                     </th>
-                    <th className="border px-4 py-2 bg-polynesian-blue text-white">
+                    <th className="border px-4 py-2 bg-blue-600 text-white">
                       Courses
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.entries(semesterData).map(([semester, courses]) => (
-                    <tr key={semester}>
-                      <td className="border px-4 py-2 text-smoky-black bg-alice-blue">
-                        {semester}
-                      </td>
-                      <td className="border px-4 py-2 text-smoky-black bg-alice-blue">
-                        <ul>
-                          {courses.map((course: string, idx: number) => (
-                            <li key={idx} className="list-disc ml-4">
-                              {course}
-                            </li>
-                          ))}
-                        </ul>
-                      </td>
-                    </tr>
-                  ))}
+                  {Object.entries(semesterData as SemesterSchedule).map(
+                    ([semester, courses]) => (
+                      <tr key={semester}>
+                        <td className="border px-4 py-2 text-gray-800">
+                          {semester}
+                        </td>
+                        <td className="border px-4 py-2">
+                          <ul className="list-disc ml-4 text-gray-700">
+                            {(courses as string[]).map((course, idx) => (
+                              <li key={idx}>{course}</li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             </div>
